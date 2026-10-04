@@ -1,0 +1,515 @@
+{
+  "project_title": "Dengue Risk Prediction in Quezon City: A Spatio-Temporal Approach",
+  "version": "1.0.0",
+  "status": "draft",
+  "expected_geographic_unit": "district",
+  "expected_district_count": 6,
+  "expected_temporal_unit": "epidemiological_week",
+  "expected_period": {
+    "start_year": 2018,
+    "end_year": 2024
+  },
+  "required_primary_keys": ["district_id", "year", "epi_week"],
+  "unresolved_research_decisions": {
+    "risk_taxonomy": {
+      "status": "unresolved",
+      "candidates": [
+        "Low / Moderate / High",
+        "Below / Alert / Epidemic"
+      ],
+      "requires_confirmation": true
+    },
+    "threshold_formulas": {
+      "status": "requires_confirmation",
+      "note": "Official QCESD threshold formulas require verification."
+    }
+  },
+  "resolved_reference_inputs": {
+    "barangay_to_district_mapping": {
+      "status": "available",
+      "dataset_id": "qc_cpdd_district_reference_2020",
+      "path": "data/authoritative/cpdd/district_profiles_2020.json",
+      "source": "Quezon City Planning and Development Department district maps",
+      "reference_year": 2020,
+      "barangay_count": 142,
+      "note": "Validated geographic mapping and demographic reference only; it does not supply weekly dengue or weather observations."
+    }
+  },
+  "feature_registry": [
+    {
+      "canonical_name": "district_id",
+      "display_name": "District ID",
+      "category": "Core Identifier",
+      "unit": "id",
+      "expected_source": "QCESD",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "constant",
+      "model_role": "identifier",
+      "required_or_candidate": "required",
+      "known_aliases": ["district", "dist"]
+    },
+    {
+      "canonical_name": "year",
+      "display_name": "Year",
+      "category": "Core Identifier",
+      "unit": "year",
+      "expected_source": "any",
+      "expected_geographic_resolution": "constant",
+      "expected_temporal_resolution": "annual",
+      "model_role": "identifier",
+      "required_or_candidate": "required",
+      "known_aliases": ["yr", "year_num"]
+    },
+    {
+      "canonical_name": "epi_week",
+      "display_name": "Epidemiological Week",
+      "category": "Core Identifier",
+      "unit": "week",
+      "expected_source": "any",
+      "expected_geographic_resolution": "constant",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "identifier",
+      "required_or_candidate": "required",
+      "known_aliases": ["week", "wn", "epiweek"]
+    },
+    {
+      "canonical_name": "dengue_cases",
+      "display_name": "Dengue Cases",
+      "category": "Epidemiological",
+      "unit": "count",
+      "expected_source": "QCESD",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "target",
+      "required_or_candidate": "required",
+      "known_aliases": ["cases", "dc_qc", "dc_bgy_wk"]
+    },
+    {
+      "canonical_name": "min_temp",
+      "display_name": "Minimum Temperature",
+      "category": "Meteorological",
+      "unit": "celsius",
+      "expected_source": "PAGASA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate",
+      "lag_weeks": [1, 2, 4],
+      "known_aliases": ["tmin"]
+    },
+    {
+      "canonical_name": "max_temp",
+      "display_name": "Maximum Temperature",
+      "category": "Meteorological",
+      "unit": "celsius",
+      "expected_source": "PAGASA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate",
+      "lag_weeks": [1, 2, 4],
+      "known_aliases": ["tmax"]
+    },
+    {
+      "canonical_name": "humidity",
+      "display_name": "Humidity",
+      "category": "Meteorological",
+      "unit": "percent",
+      "expected_source": "PAGASA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate",
+      "lag_weeks": [1, 2, 4],
+      "known_aliases": ["rh", "relative_humidity"]
+    },
+    {
+      "canonical_name": "rainfall",
+      "display_name": "Rainfall",
+      "category": "Meteorological",
+      "unit": "mm",
+      "expected_source": "PAGASA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "required",
+      "lag_weeks": [4, 8],
+      "known_aliases": ["rf", "rainfall_mm", "rf_pagasa", "rf_nasa"]
+    },
+    {
+      "canonical_name": "wind_temp",
+      "display_name": "Wind Temperature",
+      "category": "Meteorological",
+      "unit": "celsius",
+      "expected_source": "PAGASA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "wind_speed",
+      "display_name": "Wind Speed",
+      "category": "Meteorological",
+      "unit": "m/s",
+      "expected_source": "PAGASA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "mean_diurnal_range",
+      "display_name": "Mean Diurnal Range",
+      "category": "Meteorological",
+      "unit": "celsius",
+      "expected_source": "PAGASA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "isothermality",
+      "display_name": "Isothermality",
+      "category": "Meteorological",
+      "unit": "ratio",
+      "expected_source": "PAGASA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "air_quality",
+      "display_name": "Air Quality",
+      "category": "Environmental",
+      "unit": "aqi",
+      "expected_source": "DENR",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "water_quality",
+      "display_name": "Water Quality",
+      "category": "Environmental",
+      "unit": "status",
+      "expected_source": "DENR",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "ndvi",
+      "display_name": "Normalized Difference Vegetation Index",
+      "category": "Environmental",
+      "unit": "index",
+      "expected_source": "Satellite",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate",
+      "known_aliases": ["vegetation_index"]
+    },
+    {
+      "canonical_name": "land_cover",
+      "display_name": "Land Cover",
+      "category": "Environmental",
+      "unit": "class",
+      "expected_source": "NAMRIA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "lst",
+      "display_name": "Land Surface Temperature",
+      "category": "Environmental",
+      "unit": "celsius",
+      "expected_source": "Satellite",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "flood_incidents",
+      "display_name": "Flood Incidents",
+      "category": "Environmental",
+      "unit": "count",
+      "expected_source": "QC DRRMO",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "pdsi",
+      "display_name": "Palmer Drought Severity Index",
+      "category": "Environmental",
+      "unit": "index",
+      "expected_source": "Satellite",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "poverty_incidence",
+      "display_name": "Poverty Incidence",
+      "category": "Socioeconomic",
+      "unit": "percent",
+      "expected_source": "PSA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "occupation",
+      "display_name": "Occupation",
+      "category": "Socioeconomic",
+      "unit": "class",
+      "expected_source": "PSA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "employment_status",
+      "display_name": "Employment Status",
+      "category": "Socioeconomic",
+      "unit": "percent",
+      "expected_source": "PSA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "health_expenditure",
+      "display_name": "Health Expenditure",
+      "category": "Socioeconomic",
+      "unit": "currency",
+      "expected_source": "QC Government",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "educational_attainment",
+      "display_name": "Educational Attainment",
+      "category": "Socioeconomic",
+      "unit": "class",
+      "expected_source": "PSA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "literacy_rate",
+      "display_name": "Literacy Rate",
+      "category": "Socioeconomic",
+      "unit": "percent",
+      "expected_source": "PSA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "income",
+      "display_name": "Income",
+      "category": "Socioeconomic",
+      "unit": "currency",
+      "expected_source": "PSA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "fogging_activities",
+      "display_name": "Fogging Activities",
+      "category": "Intervention",
+      "unit": "count",
+      "expected_source": "QCESD",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "solid_waste_generation",
+      "display_name": "Solid Waste Generation",
+      "category": "Intervention",
+      "unit": "weight",
+      "expected_source": "QC SSDD",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "solid_waste_collection",
+      "display_name": "Solid Waste Collection",
+      "category": "Intervention",
+      "unit": "weight",
+      "expected_source": "QC SSDD",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "swm_committees",
+      "display_name": "SWM Committees",
+      "category": "Intervention",
+      "unit": "count",
+      "expected_source": "QC SSDD",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "mrf",
+      "display_name": "Materials Recovery Facilities",
+      "category": "Intervention",
+      "unit": "count",
+      "expected_source": "QC SSDD",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "mrs",
+      "display_name": "Materials Recovery Systems",
+      "category": "Intervention",
+      "unit": "count",
+      "expected_source": "QC SSDD",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "age",
+      "display_name": "Age Distribution",
+      "category": "Demographic",
+      "unit": "class",
+      "expected_source": "PSA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "gender",
+      "display_name": "Gender Distribution",
+      "category": "Demographic",
+      "unit": "percent",
+      "expected_source": "PSA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "pop_density",
+      "display_name": "Population Density",
+      "category": "Sociodemographic",
+      "unit": "people/km2",
+      "expected_source": "PSA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "num_households",
+      "display_name": "Number of Households",
+      "category": "Sociodemographic",
+      "unit": "count",
+      "expected_source": "PSA",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "land_use",
+      "display_name": "Land Use Data",
+      "category": "Infrastructure",
+      "unit": "class",
+      "expected_source": "QC Government",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "building_footprint",
+      "display_name": "Building Footprint",
+      "category": "Infrastructure",
+      "unit": "area",
+      "expected_source": "Satellite",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "num_residences",
+      "display_name": "Number of Residences",
+      "category": "Infrastructure",
+      "unit": "count",
+      "expected_source": "QC Government",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "annual",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "drainage_data",
+      "display_name": "Drainage Data",
+      "category": "Infrastructure",
+      "unit": "status",
+      "expected_source": "QC Government",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "constant",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "health_facility_accessibility",
+      "display_name": "Accessibility to Health Facilities",
+      "category": "Infrastructure",
+      "unit": "distance",
+      "expected_source": "QC Government",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "constant",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    },
+    {
+      "canonical_name": "nighttime_lights",
+      "display_name": "Nighttime Light Intensity",
+      "category": "Infrastructure",
+      "unit": "intensity",
+      "expected_source": "Satellite",
+      "expected_geographic_resolution": "district",
+      "expected_temporal_resolution": "weekly",
+      "model_role": "feature",
+      "required_or_candidate": "candidate"
+    }
+    ]
+}

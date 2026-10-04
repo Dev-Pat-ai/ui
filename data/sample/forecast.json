@@ -1,0 +1,57 @@
+{
+  "is_sample": true,
+  "prototype_version": "1.0.0-cpdd",
+  "sample_updated_at": "2026-08-28",
+  "data_source": "Static demonstration forecast dataset",
+  "disclaimer": "This information is for demonstration purposes only and should not be used for actual public-health decisions.",
+  "forecasts": {
+    "I": {
+      "district": "District I",
+      "next_week_forecast": 8,
+      "extended_outlook": [9, 7, 8],
+      "trend": "stable",
+      "risk_level": "low",
+      "confidence": "high"
+    },
+    "II": {
+      "district": "District II",
+      "next_week_forecast": 10,
+      "extended_outlook": [12, 15, 14],
+      "trend": "rising",
+      "risk_level": "low",
+      "confidence": "medium"
+    },
+    "III": {
+      "district": "District III",
+      "next_week_forecast": 15,
+      "extended_outlook": [14, 13, 12],
+      "trend": "falling",
+      "risk_level": "low",
+      "confidence": "high"
+    },
+    "IV": {
+      "district": "District IV",
+      "next_week_forecast": 42,
+      "extended_outlook": [45, 50, 55],
+      "trend": "rising",
+      "risk_level": "medium",
+      "confidence": "medium"
+    },
+    "V": {
+      "district": "District V",
+      "next_week_forecast": 85,
+      "extended_outlook": [90, 88, 82],
+      "trend": "rising",
+      "risk_level": "high",
+      "confidence": "medium"
+    },
+    "VI": {
+      "district": "District VI",
+      "next_week_forecast": 32,
+      "extended_outlook": [30, 28, 25],
+      "trend": "falling",
+      "risk_level": "medium",
+      "confidence": "high"
+    }
+  }
+}

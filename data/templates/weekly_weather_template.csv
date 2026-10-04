@@ -1,0 +1,10 @@
+epi_year,epi_week,station_id,district_id,rainfall_mm,min_temp_c,max_temp_c,relative_humidity_pct,data_source
+# epi_year: 4-digit year (e.g. 2024)
+# epi_week: Epidemiological week (1-53)
+# station_id: PAGASA Station Identifier
+# district_id: Quezon City District (I, II, III, IV, V, VI)
+# rainfall_mm: Weekly total rainfall in millimeters
+# min_temp_c: Weekly average minimum temperature in Celsius
+# max_temp_c: Weekly average maximum temperature in Celsius
+# relative_humidity_pct: Weekly average relative humidity percentage
+# data_source: Source agency (e.g. PAGASA)

@@ -1,0 +1,6 @@
+#TYPE Selected.System.Management.Automation.PSCustomObject
+"Hash","Path"
+"17CE7C50C73A2E8CE638688E4E87343A905972AF9C3BDD881F2323C8FB5C3257","C:\Users\charm\Documents\GitHub\dengue-project\data\raw\Dengue-Rainfall_Dataset.xlsx"
+"50A26B5395D0A096D895932B82832207946133F3C92B66B2A4A3158C81C5DDBD","C:\Users\charm\Documents\GitHub\dengue-project\data\raw\QC_YearlyData-BarangayCSV.csv"
+"168F318EDC3A2EE4EDE0F79C226DAB0A9C5C17A27A962D1E2AEFFFAEA6A41A42","C:\Users\charm\Documents\GitHub\dengue-project\backend\models\trained\lstm_dengue_city.pt"
+"589F70347D8BAA346BFC3E8165B8A416F5EBB595F98A429D759A58D1C51B8922","C:\Users\charm\Documents\GitHub\dengue-project\backend\models\trained\lstm_dengue_model.pt"

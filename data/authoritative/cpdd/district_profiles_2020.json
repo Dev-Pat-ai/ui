@@ -1,0 +1,1440 @@
+{
+  "dataset_id": "qc_cpdd_district_reference_2020",
+  "title": "Quezon City District and Barangay Reference Data (2020)",
+  "is_authoritative_reference": true,
+  "reference_year": 2020,
+  "geographic_scope": "Quezon City",
+  "publisher": "Quezon City Planning and Development Department (CPDD)",
+  "source_label_on_maps": "Quezon City Planning and Development Office",
+  "population_source": "Philippine Statistics Authority (PSA), 2020 Census",
+  "coordinate_reference": {
+    "projected_coordinate_system": "Philippines Zone III",
+    "geographic_coordinate_system": "GCS_PRS_1992",
+    "datum": "Philippine Reference System 1992"
+  },
+  "source_documents": [
+    {
+      "district_id": "I",
+      "document_title": "District 1 Map (2020)",
+      "uploaded_filename": "District 1 Map (2020)(1).pdf",
+      "sha256": "03447a079ffa67041c3c743eee931e36f1691a44c73e7b42ed9941ae55afdff3"
+    },
+    {
+      "district_id": "II",
+      "document_title": "District 2 Map (2020)",
+      "uploaded_filename": "District 2 Map (2020)(1).pdf",
+      "sha256": "55d04dc94fae19dace4fbdd9d9e5a1fd54f07d3ad299b8e6e2b371d74f5d0a03"
+    },
+    {
+      "district_id": "III",
+      "document_title": "District 3 Map (2020)",
+      "uploaded_filename": "District 3 Map (2020)(1).pdf",
+      "sha256": "65e2945b93894589ab6d835fac61af521b5024d7df913b89fbf946635e172034"
+    },
+    {
+      "district_id": "IV",
+      "document_title": "District 4 Map (2020)",
+      "uploaded_filename": "District 4 Map (2020)(1).pdf",
+      "sha256": "84dbfe2d0b7723c6585757a400a9ce777ecf2afcc1d44ea8df6b720149667d3b"
+    },
+    {
+      "district_id": "V",
+      "document_title": "District 5 Map (2020)",
+      "uploaded_filename": "District 5 Map (2020)(1).pdf",
+      "sha256": "5efd07dbcd78737aab10ab3284dfc4d835439928d0fdadf86520aa972a9a4adc"
+    },
+    {
+      "district_id": "VI",
+      "document_title": "District 6 Map (2020)",
+      "uploaded_filename": "District 6 Map (2020)(1).pdf",
+      "sha256": "a0e5504d4d7b23f552e9a8dcbdbff25d965c8efd22e8194c1dd116663666cffa"
+    }
+  ],
+  "notes": [
+    "Population, land area, density, barangay membership, and printed district totals were transcribed from the six CPDD district map tables.",
+    "Quezon Memorial Circle in District IV and Reservoir in District V are retained as non-barangay areas because they contribute to printed land-area totals but have no population entry.",
+    "This reference dataset contains no dengue cases, weather observations, forecasts, or outbreak-risk labels."
+  ],
+  "city_summary": {
+    "district_count": 6,
+    "barangay_count": 142,
+    "population_2020": 2960048,
+    "land_area_sqm": 161125800.0,
+    "land_area_sq_km": 161.12,
+    "land_area_ha": 16112.58
+  },
+  "districts": {
+    "I": {
+      "district_id": "I",
+      "name": "District I",
+      "barangay_count": 37,
+      "land_area_sqm": 19593860.16,
+      "land_area_sq_km": 19.59,
+      "land_area_ha": 1959.39,
+      "population_2020": 384384,
+      "population_density_per_ha": 196,
+      "barangays": [
+        {
+          "source_area_id": 1,
+          "barangay_name": "Alicia",
+          "land_area_sqm": 114641.39,
+          "land_area_sq_km": 0.11,
+          "land_area_ha": 11.46,
+          "population_2020": 6119,
+          "population_density_per_ha": 534
+        },
+        {
+          "source_area_id": 1,
+          "barangay_name": "Bagong Pag-asa",
+          "land_area_sqm": 1096837.77,
+          "land_area_sq_km": 1.1,
+          "land_area_ha": 109.68,
+          "population_2020": 29389,
+          "population_density_per_ha": 268
+        },
+        {
+          "source_area_id": 2,
+          "barangay_name": "Bahay Toro",
+          "land_area_sqm": 2954861.23,
+          "land_area_sq_km": 2.95,
+          "land_area_ha": 295.49,
+          "population_2020": 59639,
+          "population_density_per_ha": 202
+        },
+        {
+          "source_area_id": 5,
+          "barangay_name": "Balingasa",
+          "land_area_sqm": 787611.31,
+          "land_area_sq_km": 0.79,
+          "land_area_ha": 78.76,
+          "population_2020": 19260,
+          "population_density_per_ha": 245
+        },
+        {
+          "source_area_id": 3,
+          "barangay_name": "Bungad",
+          "land_area_sqm": 506811.26,
+          "land_area_sq_km": 0.51,
+          "land_area_ha": 50.68,
+          "population_2020": 7014,
+          "population_density_per_ha": 138
+        },
+        {
+          "source_area_id": 5,
+          "barangay_name": "Damar",
+          "land_area_sqm": 209349.83,
+          "land_area_sq_km": 0.21,
+          "land_area_ha": 20.93,
+          "population_2020": 952,
+          "population_density_per_ha": 45
+        },
+        {
+          "source_area_id": 4,
+          "barangay_name": "Damayan",
+          "land_area_sqm": 207176.16,
+          "land_area_sq_km": 0.21,
+          "land_area_ha": 20.72,
+          "population_2020": 6007,
+          "population_density_per_ha": 290
+        },
+        {
+          "source_area_id": 4,
+          "barangay_name": "Del Monte",
+          "land_area_sqm": 539158.85,
+          "land_area_sq_km": 0.54,
+          "land_area_ha": 53.92,
+          "population_2020": 10595,
+          "population_density_per_ha": 197
+        },
+        {
+          "source_area_id": 2,
+          "barangay_name": "Katipunan",
+          "land_area_sqm": 130072.31,
+          "land_area_sq_km": 0.13,
+          "land_area_ha": 13.01,
+          "population_2020": 10508,
+          "population_density_per_ha": 808
+        },
+        {
+          "source_area_id": 6,
+          "barangay_name": "Lourdes",
+          "land_area_sqm": 747110.77,
+          "land_area_sq_km": 0.75,
+          "land_area_ha": 74.71,
+          "population_2020": 4523,
+          "population_density_per_ha": 61
+        },
+        {
+          "source_area_id": 6,
+          "barangay_name": "Maharlika",
+          "land_area_sqm": 388492.25,
+          "land_area_sq_km": 0.39,
+          "land_area_ha": 38.85,
+          "population_2020": 4349,
+          "population_density_per_ha": 112
+        },
+        {
+          "source_area_id": 5,
+          "barangay_name": "Manresa",
+          "land_area_sqm": 831267.07,
+          "land_area_sq_km": 0.83,
+          "land_area_ha": 83.13,
+          "population_2020": 17224,
+          "population_density_per_ha": 207
+        },
+        {
+          "source_area_id": 4,
+          "barangay_name": "Mariblo",
+          "land_area_sqm": 133382.24,
+          "land_area_sq_km": 0.13,
+          "land_area_ha": 13.34,
+          "population_2020": 3433,
+          "population_density_per_ha": 257
+        },
+        {
+          "source_area_id": 4,
+          "barangay_name": "Masambong",
+          "land_area_sqm": 341473.34,
+          "land_area_sq_km": 0.34,
+          "land_area_ha": 34.15,
+          "population_2020": 8800,
+          "population_density_per_ha": 258
+        },
+        {
+          "source_area_id": 6,
+          "barangay_name": "N. S. Amoranto (Gintong Silahis)",
+          "land_area_sqm": 235732.76,
+          "land_area_sq_km": 0.24,
+          "land_area_ha": 23.57,
+          "population_2020": 5952,
+          "population_density_per_ha": 252
+        },
+        {
+          "source_area_id": 3,
+          "barangay_name": "Nayong Kanluran",
+          "land_area_sqm": 141569.49,
+          "land_area_sq_km": 0.14,
+          "land_area_ha": 14.16,
+          "population_2020": 2456,
+          "population_density_per_ha": 173
+        },
+        {
+          "source_area_id": 6,
+          "barangay_name": "Paang Bundok",
+          "land_area_sqm": 154058.77,
+          "land_area_sq_km": 0.15,
+          "land_area_ha": 15.41,
+          "population_2020": 4806,
+          "population_density_per_ha": 312
+        },
+        {
+          "source_area_id": 5,
+          "barangay_name": "Pag-ibig sa Nayon",
+          "land_area_sqm": 369030.99,
+          "land_area_sq_km": 0.37,
+          "land_area_ha": 36.9,
+          "population_2020": 5918,
+          "population_density_per_ha": 160
+        },
+        {
+          "source_area_id": 3,
+          "barangay_name": "Paltok",
+          "land_area_sqm": 657735.48,
+          "land_area_sq_km": 0.66,
+          "land_area_ha": 65.77,
+          "population_2020": 18124,
+          "population_density_per_ha": 276
+        },
+        {
+          "source_area_id": 4,
+          "barangay_name": "Paraiso",
+          "land_area_sqm": 153642.45,
+          "land_area_sq_km": 0.15,
+          "land_area_ha": 15.36,
+          "population_2020": 3537,
+          "population_density_per_ha": 230
+        },
+        {
+          "source_area_id": 3,
+          "barangay_name": "Phil-Am",
+          "land_area_sqm": 444260.44,
+          "land_area_sq_km": 0.44,
+          "land_area_ha": 44.43,
+          "population_2020": 2524,
+          "population_density_per_ha": 57
+        },
+        {
+          "source_area_id": 1,
+          "barangay_name": "Project 6",
+          "land_area_sqm": 1528174.96,
+          "land_area_sq_km": 1.53,
+          "land_area_ha": 152.82,
+          "population_2020": 11899,
+          "population_density_per_ha": 78
+        },
+        {
+          "source_area_id": 1,
+          "barangay_name": "Ramon Magsaysay",
+          "land_area_sqm": 344953.52,
+          "land_area_sq_km": 0.34,
+          "land_area_ha": 34.5,
+          "population_2020": 14321,
+          "population_density_per_ha": 415
+        },
+        {
+          "source_area_id": 5,
+          "barangay_name": "Saint Peter",
+          "land_area_sqm": 269368.56,
+          "land_area_sq_km": 0.27,
+          "land_area_ha": 26.94,
+          "population_2020": 4049,
+          "population_density_per_ha": 150
+        },
+        {
+          "source_area_id": 6,
+          "barangay_name": "Salvacion",
+          "land_area_sqm": 204626.74,
+          "land_area_sq_km": 0.2,
+          "land_area_ha": 20.46,
+          "population_2020": 6681,
+          "population_density_per_ha": 326
+        },
+        {
+          "source_area_id": 2,
+          "barangay_name": "San Antonio",
+          "land_area_sqm": 745542.92,
+          "land_area_sq_km": 0.75,
+          "land_area_ha": 74.55,
+          "population_2020": 22229,
+          "population_density_per_ha": 298
+        },
+        {
+          "source_area_id": 6,
+          "barangay_name": "San Isidro Labrador",
+          "land_area_sqm": 241925.68,
+          "land_area_sq_km": 0.24,
+          "land_area_ha": 24.19,
+          "population_2020": 6247,
+          "population_density_per_ha": 258
+        },
+        {
+          "source_area_id": 5,
+          "barangay_name": "San Jose",
+          "land_area_sqm": 277175.45,
+          "land_area_sq_km": 0.28,
+          "land_area_ha": 27.72,
+          "population_2020": 5844,
+          "population_density_per_ha": 211
+        },
+        {
+          "source_area_id": 3,
+          "barangay_name": "Santa Cruz",
+          "land_area_sqm": 441748.0,
+          "land_area_sq_km": 0.44,
+          "land_area_ha": 44.17,
+          "population_2020": 3945,
+          "population_density_per_ha": 89
+        },
+        {
+          "source_area_id": 6,
+          "barangay_name": "Santa Teresita",
+          "land_area_sqm": 323437.25,
+          "land_area_sq_km": 0.32,
+          "land_area_ha": 32.34,
+          "population_2020": 11776,
+          "population_density_per_ha": 364
+        },
+        {
+          "source_area_id": 1,
+          "barangay_name": "Santo Cristo",
+          "land_area_sqm": 551318.68,
+          "land_area_sq_km": 0.55,
+          "land_area_ha": 55.13,
+          "population_2020": 25783,
+          "population_density_per_ha": 468
+        },
+        {
+          "source_area_id": 5,
+          "barangay_name": "Sienna",
+          "land_area_sqm": 386908.67,
+          "land_area_sq_km": 0.39,
+          "land_area_ha": 38.69,
+          "population_2020": 2072,
+          "population_density_per_ha": 54
+        },
+        {
+          "source_area_id": 4,
+          "barangay_name": "Sto. Domingo (Matalahib)",
+          "land_area_sqm": 906940.46,
+          "land_area_sq_km": 0.91,
+          "land_area_ha": 90.69,
+          "population_2020": 11476,
+          "population_density_per_ha": 127
+        },
+        {
+          "source_area_id": 4,
+          "barangay_name": "Talayan",
+          "land_area_sqm": 494111.36,
+          "land_area_sq_km": 0.49,
+          "land_area_ha": 49.41,
+          "population_2020": 4402,
+          "population_density_per_ha": 89
+        },
+        {
+          "source_area_id": 1,
+          "barangay_name": "Vasra",
+          "land_area_sqm": 540302.68,
+          "land_area_sq_km": 0.54,
+          "land_area_ha": 54.03,
+          "population_2020": 7345,
+          "population_density_per_ha": 136
+        },
+        {
+          "source_area_id": 3,
+          "barangay_name": "Veterans Village",
+          "land_area_sqm": 518312.5,
+          "land_area_sq_km": 0.52,
+          "land_area_ha": 51.83,
+          "population_2020": 12755,
+          "population_density_per_ha": 246
+        },
+        {
+          "source_area_id": 3,
+          "barangay_name": "West Triangle",
+          "land_area_sqm": 674736.59,
+          "land_area_sq_km": 0.67,
+          "land_area_ha": 67.47,
+          "population_2020": 2431,
+          "population_density_per_ha": 36
+        }
+      ],
+      "non_barangay_areas": []
+    },
+    "II": {
+      "district_id": "II",
+      "name": "District II",
+      "barangay_count": 5,
+      "land_area_sqm": 21823725.85,
+      "land_area_sq_km": 21.82,
+      "land_area_ha": 2182.37,
+      "population_2020": 738328,
+      "population_density_per_ha": 338,
+      "barangays": [
+        {
+          "source_area_id": 7,
+          "barangay_name": "Bagong Silangan",
+          "land_area_sqm": 5948204.26,
+          "land_area_sq_km": 5.95,
+          "land_area_ha": 594.82,
+          "population_2020": 106886,
+          "population_density_per_ha": 180
+        },
+        {
+          "source_area_id": 7,
+          "barangay_name": "Batasan Hills",
+          "land_area_sqm": 5921098.72,
+          "land_area_sq_km": 5.92,
+          "land_area_ha": 592.11,
+          "population_2020": 166572,
+          "population_density_per_ha": 281
+        },
+        {
+          "source_area_id": 7,
+          "barangay_name": "Commonwealth",
+          "land_area_sqm": 3462499.75,
+          "land_area_sq_km": 3.46,
+          "land_area_ha": 346.25,
+          "population_2020": 213229,
+          "population_density_per_ha": 616
+        },
+        {
+          "source_area_id": 7,
+          "barangay_name": "Holy Spirit",
+          "land_area_sqm": 3281857.01,
+          "land_area_sq_km": 3.28,
+          "land_area_ha": 328.19,
+          "population_2020": 111901,
+          "population_density_per_ha": 341
+        },
+        {
+          "source_area_id": 7,
+          "barangay_name": "Payatas",
+          "land_area_sqm": 3210066.1,
+          "land_area_sq_km": 3.21,
+          "land_area_ha": 321.01,
+          "population_2020": 139740,
+          "population_density_per_ha": 435
+        }
+      ],
+      "non_barangay_areas": []
+    },
+    "III": {
+      "district_id": "III",
+      "name": "District III",
+      "barangay_count": 37,
+      "land_area_sqm": 21848159.78,
+      "land_area_sq_km": 21.85,
+      "land_area_ha": 2184.82,
+      "population_2020": 319371,
+      "population_density_per_ha": 146,
+      "barangays": [
+        {
+          "source_area_id": 14,
+          "barangay_name": "Amihan",
+          "land_area_sqm": 129459.41,
+          "land_area_sq_km": 0.13,
+          "land_area_ha": 12.95,
+          "population_2020": 3513,
+          "population_density_per_ha": 271
+        },
+        {
+          "source_area_id": 18,
+          "barangay_name": "Bagumbayan",
+          "land_area_sqm": 1276353.26,
+          "land_area_sq_km": 1.28,
+          "land_area_ha": 127.64,
+          "population_2020": 22147,
+          "population_density_per_ha": 174
+        },
+        {
+          "source_area_id": 17,
+          "barangay_name": "Bagumbuhay",
+          "land_area_sqm": 235174.1,
+          "land_area_sq_km": 0.24,
+          "land_area_ha": 23.52,
+          "population_2020": 6681,
+          "population_density_per_ha": 284
+        },
+        {
+          "source_area_id": 16,
+          "barangay_name": "Bayanihan",
+          "land_area_sqm": 63505.2,
+          "land_area_sq_km": 0.06,
+          "land_area_ha": 6.35,
+          "population_2020": 613,
+          "population_density_per_ha": 97
+        },
+        {
+          "source_area_id": 17,
+          "barangay_name": "Blue Ridge A",
+          "land_area_sqm": 263012.81,
+          "land_area_sq_km": 0.26,
+          "land_area_ha": 26.3,
+          "population_2020": 1534,
+          "population_density_per_ha": 58
+        },
+        {
+          "source_area_id": 17,
+          "barangay_name": "Blue Ridge B",
+          "land_area_sqm": 139610.6,
+          "land_area_sq_km": 0.14,
+          "land_area_ha": 13.96,
+          "population_2020": 1071,
+          "population_density_per_ha": 77
+        },
+        {
+          "source_area_id": 17,
+          "barangay_name": "Camp Aguinaldo",
+          "land_area_sqm": 1843592.42,
+          "land_area_sq_km": 1.84,
+          "land_area_ha": 184.36,
+          "population_2020": 3269,
+          "population_density_per_ha": 18
+        },
+        {
+          "source_area_id": 14,
+          "barangay_name": "Claro (Quirino 3-B)",
+          "land_area_sqm": 101271.48,
+          "land_area_sq_km": 0.1,
+          "land_area_ha": 10.13,
+          "population_2020": 3885,
+          "population_density_per_ha": 384
+        },
+        {
+          "source_area_id": 18,
+          "barangay_name": "Dioquino Zobel",
+          "land_area_sqm": 42627.27,
+          "land_area_sq_km": 0.04,
+          "land_area_ha": 4.26,
+          "population_2020": 1805,
+          "population_density_per_ha": 423
+        },
+        {
+          "source_area_id": 14,
+          "barangay_name": "Duyan Duyan",
+          "land_area_sqm": 165289.56,
+          "land_area_sq_km": 0.17,
+          "land_area_ha": 16.53,
+          "population_2020": 3357,
+          "population_density_per_ha": 203
+        },
+        {
+          "source_area_id": 13,
+          "barangay_name": "E. Rodriguez",
+          "land_area_sqm": 652680.33,
+          "land_area_sq_km": 0.65,
+          "land_area_ha": 65.27,
+          "population_2020": 17363,
+          "population_density_per_ha": 266
+        },
+        {
+          "source_area_id": 14,
+          "barangay_name": "East Kamias",
+          "land_area_sqm": 271464.25,
+          "land_area_sq_km": 0.27,
+          "land_area_ha": 27.15,
+          "population_2020": 6395,
+          "population_density_per_ha": 236
+        },
+        {
+          "source_area_id": 18,
+          "barangay_name": "Escopa I",
+          "land_area_sqm": 12798.37,
+          "land_area_sq_km": 0.01,
+          "land_area_ha": 1.28,
+          "population_2020": 2110,
+          "population_density_per_ha": 1649
+        },
+        {
+          "source_area_id": 18,
+          "barangay_name": "Escopa II",
+          "land_area_sqm": 18874.64,
+          "land_area_sq_km": 0.02,
+          "land_area_ha": 1.89,
+          "population_2020": 1683,
+          "population_density_per_ha": 892
+        },
+        {
+          "source_area_id": 18,
+          "barangay_name": "Escopa III",
+          "land_area_sqm": 89857.57,
+          "land_area_sq_km": 0.09,
+          "land_area_ha": 8.99,
+          "population_2020": 7985,
+          "population_density_per_ha": 889
+        },
+        {
+          "source_area_id": 18,
+          "barangay_name": "Escopa IV",
+          "land_area_sqm": 16067.93,
+          "land_area_sq_km": 0.02,
+          "land_area_ha": 1.61,
+          "population_2020": 1837,
+          "population_density_per_ha": 1143
+        },
+        {
+          "source_area_id": 17,
+          "barangay_name": "Libis",
+          "land_area_sqm": 84518.98,
+          "land_area_sq_km": 0.08,
+          "land_area_ha": 8.45,
+          "population_2020": 4208,
+          "population_density_per_ha": 498
+        },
+        {
+          "source_area_id": 15,
+          "barangay_name": "Loyola Heights",
+          "land_area_sqm": 2379874.29,
+          "land_area_sq_km": 2.38,
+          "land_area_ha": 237.99,
+          "population_2020": 21140,
+          "population_density_per_ha": 89
+        },
+        {
+          "source_area_id": 16,
+          "barangay_name": "Mangga",
+          "land_area_sqm": 81025.62,
+          "land_area_sq_km": 0.08,
+          "land_area_ha": 8.1,
+          "population_2020": 913,
+          "population_density_per_ha": 113
+        },
+        {
+          "source_area_id": 18,
+          "barangay_name": "Marilag",
+          "land_area_sqm": 462405.09,
+          "land_area_sq_km": 0.46,
+          "land_area_ha": 46.24,
+          "population_2020": 12555,
+          "population_density_per_ha": 272
+        },
+        {
+          "source_area_id": 16,
+          "barangay_name": "Masagana",
+          "land_area_sqm": 163852.53,
+          "land_area_sq_km": 0.16,
+          "land_area_ha": 16.39,
+          "population_2020": 4166,
+          "population_density_per_ha": 254
+        },
+        {
+          "source_area_id": 15,
+          "barangay_name": "Matandang Balara",
+          "land_area_sqm": 3348615.63,
+          "land_area_sq_km": 3.35,
+          "land_area_ha": 334.86,
+          "population_2020": 69475,
+          "population_density_per_ha": 207
+        },
+        {
+          "source_area_id": 17,
+          "barangay_name": "Milagrosa",
+          "land_area_sqm": 269367.15,
+          "land_area_sq_km": 0.27,
+          "land_area_ha": 26.94,
+          "population_2020": 6775,
+          "population_density_per_ha": 252
+        },
+        {
+          "source_area_id": 15,
+          "barangay_name": "Pansol",
+          "land_area_sqm": 3305105.59,
+          "land_area_sq_km": 3.31,
+          "land_area_ha": 330.51,
+          "population_2020": 35254,
+          "population_density_per_ha": 107
+        },
+        {
+          "source_area_id": 14,
+          "barangay_name": "Quirino 2-A",
+          "land_area_sqm": 174403.94,
+          "land_area_sq_km": 0.17,
+          "land_area_ha": 17.44,
+          "population_2020": 4622,
+          "population_density_per_ha": 265
+        },
+        {
+          "source_area_id": 14,
+          "barangay_name": "Quirino 2-B",
+          "land_area_sqm": 148101.99,
+          "land_area_sq_km": 0.15,
+          "land_area_ha": 14.81,
+          "population_2020": 3938,
+          "population_density_per_ha": 266
+        },
+        {
+          "source_area_id": 14,
+          "barangay_name": "Quirino 2-C",
+          "land_area_sqm": 74962.53,
+          "land_area_sq_km": 0.07,
+          "land_area_ha": 7.5,
+          "population_2020": 3189,
+          "population_density_per_ha": 425
+        },
+        {
+          "source_area_id": 14,
+          "barangay_name": "Quirino 3-A",
+          "land_area_sqm": 56418.34,
+          "land_area_sq_km": 0.06,
+          "land_area_ha": 5.64,
+          "population_2020": 1070,
+          "population_density_per_ha": 190
+        },
+        {
+          "source_area_id": 17,
+          "barangay_name": "Saint Ignatius",
+          "land_area_sqm": 258054.35,
+          "land_area_sq_km": 0.26,
+          "land_area_ha": 25.81,
+          "population_2020": 2054,
+          "population_density_per_ha": 80
+        },
+        {
+          "source_area_id": 16,
+          "barangay_name": "San Roque",
+          "land_area_sqm": 651099.76,
+          "land_area_sq_km": 0.65,
+          "land_area_ha": 65.11,
+          "population_2020": 19093,
+          "population_density_per_ha": 293
+        },
+        {
+          "source_area_id": 13,
+          "barangay_name": "Silangan",
+          "land_area_sqm": 224746.06,
+          "land_area_sq_km": 0.22,
+          "land_area_ha": 22.47,
+          "population_2020": 4831,
+          "population_density_per_ha": 215
+        },
+        {
+          "source_area_id": 13,
+          "barangay_name": "Socorro",
+          "land_area_sqm": 1173758.86,
+          "land_area_sq_km": 1.17,
+          "land_area_ha": 117.38,
+          "population_2020": 22227,
+          "population_density_per_ha": 189
+        },
+        {
+          "source_area_id": 18,
+          "barangay_name": "Tagumpay",
+          "land_area_sqm": 96367.74,
+          "land_area_sq_km": 0.1,
+          "land_area_ha": 9.64,
+          "population_2020": 2257,
+          "population_density_per_ha": 234
+        },
+        {
+          "source_area_id": 17,
+          "barangay_name": "Ugong Norte",
+          "land_area_sqm": 2752232.98,
+          "land_area_sq_km": 2.75,
+          "land_area_ha": 275.22,
+          "population_2020": 6301,
+          "population_density_per_ha": 23
+        },
+        {
+          "source_area_id": 16,
+          "barangay_name": "Villa Maria Clara",
+          "land_area_sqm": 84013.8,
+          "land_area_sq_km": 0.08,
+          "land_area_ha": 8.4,
+          "population_2020": 2442,
+          "population_density_per_ha": 291
+        },
+        {
+          "source_area_id": 14,
+          "barangay_name": "West Kamias",
+          "land_area_sqm": 180394.61,
+          "land_area_sq_km": 0.18,
+          "land_area_ha": 18.04,
+          "population_2020": 4055,
+          "population_density_per_ha": 225
+        },
+        {
+          "source_area_id": 17,
+          "barangay_name": "White Plains",
+          "land_area_sqm": 557200.76,
+          "land_area_sq_km": 0.56,
+          "land_area_ha": 55.72,
+          "population_2020": 3558,
+          "population_density_per_ha": 64
+        }
+      ],
+      "non_barangay_areas": []
+    },
+    "IV": {
+      "district_id": "IV",
+      "name": "District IV",
+      "barangay_count": 38,
+      "land_area_sqm": 23418947.72,
+      "land_area_sq_km": 23.42,
+      "land_area_ha": 2341.89,
+      "population_2020": 407402,
+      "population_density_per_ha": 174,
+      "barangays": [
+        {
+          "source_area_id": 20,
+          "barangay_name": "Bagong Lipunan ng Crame",
+          "land_area_sqm": 1042147.5,
+          "land_area_sq_km": 1.04,
+          "land_area_ha": 104.21,
+          "population_2020": 13630,
+          "population_density_per_ha": 131
+        },
+        {
+          "source_area_id": 24,
+          "barangay_name": "Botocan",
+          "land_area_sqm": 37804.52,
+          "land_area_sq_km": 0.04,
+          "land_area_ha": 3.78,
+          "population_2020": 7501,
+          "population_density_per_ha": 1984
+        },
+        {
+          "source_area_id": 24,
+          "barangay_name": "Central",
+          "land_area_sqm": 1031618.47,
+          "land_area_sq_km": 1.03,
+          "land_area_ha": 103.16,
+          "population_2020": 19331,
+          "population_density_per_ha": 187
+        },
+        {
+          "source_area_id": 21,
+          "barangay_name": "Damayang Lagi",
+          "land_area_sqm": 800825.17,
+          "land_area_sq_km": 0.8,
+          "land_area_ha": 80.08,
+          "population_2020": 19466,
+          "population_density_per_ha": 243
+        },
+        {
+          "source_area_id": 22,
+          "barangay_name": "Don Manuel",
+          "land_area_sqm": 225227.52,
+          "land_area_sq_km": 0.23,
+          "land_area_ha": 22.52,
+          "population_2020": 1728,
+          "population_density_per_ha": 77
+        },
+        {
+          "source_area_id": 22,
+          "barangay_name": "Doña Aurora",
+          "land_area_sqm": 132354.08,
+          "land_area_sq_km": 0.13,
+          "land_area_ha": 13.24,
+          "population_2020": 4221,
+          "population_density_per_ha": 319
+        },
+        {
+          "source_area_id": 22,
+          "barangay_name": "Doña Imelda",
+          "land_area_sqm": 926138.35,
+          "land_area_sq_km": 0.93,
+          "land_area_ha": 92.61,
+          "population_2020": 11724,
+          "population_density_per_ha": 127
+        },
+        {
+          "source_area_id": 22,
+          "barangay_name": "Doña Josefa",
+          "land_area_sqm": 283282.95,
+          "land_area_sq_km": 0.28,
+          "land_area_ha": 28.33,
+          "population_2020": 1857,
+          "population_density_per_ha": 66
+        },
+        {
+          "source_area_id": 20,
+          "barangay_name": "Horseshoe",
+          "land_area_sqm": 371031.6,
+          "land_area_sq_km": 0.37,
+          "land_area_ha": 37.1,
+          "population_2020": 2866,
+          "population_density_per_ha": 77
+        },
+        {
+          "source_area_id": 20,
+          "barangay_name": "Immaculate Concepcion",
+          "land_area_sqm": 509284.94,
+          "land_area_sq_km": 0.51,
+          "land_area_ha": 50.93,
+          "population_2020": 8169,
+          "population_density_per_ha": 160
+        },
+        {
+          "source_area_id": 21,
+          "barangay_name": "Kalusugan",
+          "land_area_sqm": 428803.47,
+          "land_area_sq_km": 0.43,
+          "land_area_ha": 42.88,
+          "population_2020": 4786,
+          "population_density_per_ha": 112
+        },
+        {
+          "source_area_id": 19,
+          "barangay_name": "Kamuning",
+          "land_area_sqm": 484178.34,
+          "land_area_sq_km": 0.48,
+          "land_area_ha": 48.42,
+          "population_2020": 14258,
+          "population_density_per_ha": 294
+        },
+        {
+          "source_area_id": 20,
+          "barangay_name": "Kaunlaran",
+          "land_area_sqm": 550825.21,
+          "land_area_sq_km": 0.55,
+          "land_area_ha": 55.08,
+          "population_2020": 12387,
+          "population_density_per_ha": 225
+        },
+        {
+          "source_area_id": 21,
+          "barangay_name": "Kristong Hari",
+          "land_area_sqm": 338937.26,
+          "land_area_sq_km": 0.34,
+          "land_area_ha": 33.89,
+          "population_2020": 6055,
+          "population_density_per_ha": 179
+        },
+        {
+          "source_area_id": 24,
+          "barangay_name": "Krus na Ligas",
+          "land_area_sqm": 354707.88,
+          "land_area_sq_km": 0.35,
+          "land_area_ha": 35.47,
+          "population_2020": 21287,
+          "population_density_per_ha": 600
+        },
+        {
+          "source_area_id": 19,
+          "barangay_name": "Laging Handa",
+          "land_area_sqm": 621759.62,
+          "land_area_sq_km": 0.62,
+          "land_area_ha": 62.18,
+          "population_2020": 4812,
+          "population_density_per_ha": 77
+        },
+        {
+          "source_area_id": 24,
+          "barangay_name": "Malaya",
+          "land_area_sqm": 131371.35,
+          "land_area_sq_km": 0.13,
+          "land_area_ha": 13.14,
+          "population_2020": 2605,
+          "population_density_per_ha": 198
+        },
+        {
+          "source_area_id": 21,
+          "barangay_name": "Mariana",
+          "land_area_sqm": 1652500.48,
+          "land_area_sq_km": 1.65,
+          "land_area_ha": 165.25,
+          "population_2020": 11967,
+          "population_density_per_ha": 72
+        },
+        {
+          "source_area_id": 19,
+          "barangay_name": "Obrero",
+          "land_area_sqm": 248858.73,
+          "land_area_sq_km": 0.25,
+          "land_area_ha": 24.89,
+          "population_2020": 9500,
+          "population_density_per_ha": 382
+        },
+        {
+          "source_area_id": 23,
+          "barangay_name": "Old Capitol Site",
+          "land_area_sqm": 181573.6,
+          "land_area_sq_km": 0.18,
+          "land_area_ha": 18.16,
+          "population_2020": 1319,
+          "population_density_per_ha": 73
+        },
+        {
+          "source_area_id": 19,
+          "barangay_name": "Paligsahan",
+          "land_area_sqm": 578438.49,
+          "land_area_sq_km": 0.58,
+          "land_area_ha": 57.84,
+          "population_2020": 3518,
+          "population_density_per_ha": 61
+        },
+        {
+          "source_area_id": 20,
+          "barangay_name": "Pinagkaisahan",
+          "land_area_sqm": 335844.26,
+          "land_area_sq_km": 0.34,
+          "land_area_ha": 33.58,
+          "population_2020": 4366,
+          "population_density_per_ha": 130
+        },
+        {
+          "source_area_id": 24,
+          "barangay_name": "Pinyahan",
+          "land_area_sqm": 1568630.17,
+          "land_area_sq_km": 1.57,
+          "land_area_ha": 156.86,
+          "population_2020": 21868,
+          "population_density_per_ha": 139
+        },
+        {
+          "source_area_id": 19,
+          "barangay_name": "Roxas",
+          "land_area_sqm": 448500.86,
+          "land_area_sq_km": 0.45,
+          "land_area_ha": 44.85,
+          "population_2020": 10670,
+          "population_density_per_ha": 238
+        },
+        {
+          "source_area_id": 19,
+          "barangay_name": "Sacred Heart",
+          "land_area_sqm": 528368.87,
+          "land_area_sq_km": 0.53,
+          "land_area_ha": 52.84,
+          "population_2020": 6089,
+          "population_density_per_ha": 115
+        },
+        {
+          "source_area_id": 22,
+          "barangay_name": "San Isidro",
+          "land_area_sqm": 111424.32,
+          "land_area_sq_km": 0.11,
+          "land_area_ha": 11.14,
+          "population_2020": 6550,
+          "population_density_per_ha": 588
+        },
+        {
+          "source_area_id": 20,
+          "barangay_name": "San Martin de Porres",
+          "land_area_sqm": 208753.9,
+          "land_area_sq_km": 0.21,
+          "land_area_ha": 20.88,
+          "population_2020": 11632,
+          "population_density_per_ha": 557
+        },
+        {
+          "source_area_id": 23,
+          "barangay_name": "San Vicente",
+          "land_area_sqm": 93718.12,
+          "land_area_sq_km": 0.09,
+          "land_area_ha": 9.37,
+          "population_2020": 7160,
+          "population_density_per_ha": 764
+        },
+        {
+          "source_area_id": 22,
+          "barangay_name": "Santo Niño",
+          "land_area_sqm": 187405.49,
+          "land_area_sq_km": 0.19,
+          "land_area_ha": 18.74,
+          "population_2020": 7070,
+          "population_density_per_ha": 377
+        },
+        {
+          "source_area_id": 22,
+          "barangay_name": "Santol",
+          "land_area_sqm": 432486.14,
+          "land_area_sq_km": 0.43,
+          "land_area_ha": 43.25,
+          "population_2020": 6410,
+          "population_density_per_ha": 148
+        },
+        {
+          "source_area_id": 24,
+          "barangay_name": "Sikatuna Village",
+          "land_area_sqm": 416631.35,
+          "land_area_sq_km": 0.42,
+          "land_area_ha": 41.66,
+          "population_2020": 6121,
+          "population_density_per_ha": 147
+        },
+        {
+          "source_area_id": 19,
+          "barangay_name": "South Triangle",
+          "land_area_sqm": 1124406.28,
+          "land_area_sq_km": 1.12,
+          "land_area_ha": 112.44,
+          "population_2020": 14494,
+          "population_density_per_ha": 129
+        },
+        {
+          "source_area_id": 21,
+          "barangay_name": "Tatalon",
+          "land_area_sqm": 923582.94,
+          "land_area_sq_km": 0.92,
+          "land_area_ha": 92.36,
+          "population_2020": 55404,
+          "population_density_per_ha": 600
+        },
+        {
+          "source_area_id": 23,
+          "barangay_name": "Teachers Village East",
+          "land_area_sqm": 218142.26,
+          "land_area_sq_km": 0.22,
+          "land_area_ha": 21.81,
+          "population_2020": 2401,
+          "population_density_per_ha": 110
+        },
+        {
+          "source_area_id": 23,
+          "barangay_name": "Teachers Village West",
+          "land_area_sqm": 234457.01,
+          "land_area_sq_km": 0.23,
+          "land_area_ha": 23.45,
+          "population_2020": 2986,
+          "population_density_per_ha": 127
+        },
+        {
+          "source_area_id": 23,
+          "barangay_name": "U. P. Campus",
+          "land_area_sqm": 4531776.65,
+          "land_area_sq_km": 4.53,
+          "land_area_ha": 453.18,
+          "population_2020": 47127,
+          "population_density_per_ha": 104
+        },
+        {
+          "source_area_id": 23,
+          "barangay_name": "U. P. Village",
+          "land_area_sqm": 374595.65,
+          "land_area_sq_km": 0.37,
+          "land_area_ha": 37.46,
+          "population_2020": 3167,
+          "population_density_per_ha": 85
+        },
+        {
+          "source_area_id": 20,
+          "barangay_name": "Valencia",
+          "land_area_sqm": 443985.46,
+          "land_area_sq_km": 0.44,
+          "land_area_ha": 44.4,
+          "population_2020": 10900,
+          "population_density_per_ha": 246
+        }
+      ],
+      "non_barangay_areas": [
+        {
+          "source_area_id": 0,
+          "name": "Quezon Memorial Circle (QMC)",
+          "land_area_sqm": 304568.46,
+          "land_area_sq_km": 0.3,
+          "land_area_ha": 30.46
+        }
+      ]
+    },
+    "V": {
+      "district_id": "V",
+      "name": "District V",
+      "barangay_count": 14,
+      "land_area_sqm": 52467231.17,
+      "land_area_sq_km": 52.47,
+      "land_area_ha": 5246.72,
+      "population_2020": 596047,
+      "population_density_per_ha": 114,
+      "barangays": [
+        {
+          "source_area_id": 10,
+          "barangay_name": "Bagbag",
+          "land_area_sqm": 2071668.84,
+          "land_area_sq_km": 2.07,
+          "land_area_ha": 207.17,
+          "population_2020": 64653,
+          "population_density_per_ha": 312
+        },
+        {
+          "source_area_id": 9,
+          "barangay_name": "Capri",
+          "land_area_sqm": 89348.67,
+          "land_area_sq_km": 0.09,
+          "land_area_ha": 8.93,
+          "population_2020": 12903,
+          "population_density_per_ha": 1444
+        },
+        {
+          "source_area_id": 8,
+          "barangay_name": "Fairview",
+          "land_area_sqm": 3116768.39,
+          "land_area_sq_km": 3.12,
+          "land_area_ha": 311.68,
+          "population_2020": 61813,
+          "population_density_per_ha": 198
+        },
+        {
+          "source_area_id": 8,
+          "barangay_name": "Greater Lagro",
+          "land_area_sqm": 4206819.15,
+          "land_area_sq_km": 4.21,
+          "land_area_ha": 420.68,
+          "population_2020": 23569,
+          "population_density_per_ha": 56
+        },
+        {
+          "source_area_id": 9,
+          "barangay_name": "Gulod",
+          "land_area_sqm": 1282491.57,
+          "land_area_sq_km": 1.28,
+          "land_area_ha": 128.25,
+          "population_2020": 62542,
+          "population_density_per_ha": 488
+        },
+        {
+          "source_area_id": 8,
+          "barangay_name": "Kaligayahan",
+          "land_area_sqm": 2513422.02,
+          "land_area_sq_km": 2.51,
+          "land_area_ha": 251.34,
+          "population_2020": 60462,
+          "population_density_per_ha": 241
+        },
+        {
+          "source_area_id": 9,
+          "barangay_name": "Nagkaisang Nayon",
+          "land_area_sqm": 2822252.67,
+          "land_area_sq_km": 2.82,
+          "land_area_ha": 282.23,
+          "population_2020": 53781,
+          "population_density_per_ha": 191
+        },
+        {
+          "source_area_id": 8,
+          "barangay_name": "North Fairview",
+          "land_area_sqm": 1960162.77,
+          "land_area_sq_km": 1.96,
+          "land_area_ha": 196.02,
+          "population_2020": 44408,
+          "population_density_per_ha": 227
+        },
+        {
+          "source_area_id": 9,
+          "barangay_name": "Novaliches Proper",
+          "land_area_sqm": 656863.04,
+          "land_area_sq_km": 0.66,
+          "land_area_ha": 65.69,
+          "population_2020": 15468,
+          "population_density_per_ha": 235
+        },
+        {
+          "source_area_id": 8,
+          "barangay_name": "Pasong Putik Proper",
+          "land_area_sqm": 2397825.76,
+          "land_area_sq_km": 2.4,
+          "land_area_ha": 239.78,
+          "population_2020": 39896,
+          "population_density_per_ha": 166
+        },
+        {
+          "source_area_id": 9,
+          "barangay_name": "San Agustin",
+          "land_area_sqm": 1020895.82,
+          "land_area_sq_km": 1.02,
+          "land_area_ha": 102.09,
+          "population_2020": 25355,
+          "population_density_per_ha": 248
+        },
+        {
+          "source_area_id": 10,
+          "barangay_name": "San Bartolome",
+          "land_area_sqm": 3567505.0,
+          "land_area_sq_km": 3.57,
+          "land_area_ha": 356.75,
+          "population_2020": 51148,
+          "population_density_per_ha": 143
+        },
+        {
+          "source_area_id": 8,
+          "barangay_name": "Santa Lucia",
+          "land_area_sqm": 674467.32,
+          "land_area_sq_km": 0.67,
+          "land_area_ha": 67.45,
+          "population_2020": 28215,
+          "population_density_per_ha": 418
+        },
+        {
+          "source_area_id": 9,
+          "barangay_name": "Santa Monica",
+          "land_area_sqm": 1645222.94,
+          "land_area_sq_km": 1.65,
+          "land_area_ha": 164.52,
+          "population_2020": 51834,
+          "population_density_per_ha": 315
+        }
+      ],
+      "non_barangay_areas": [
+        {
+          "source_area_id": 0,
+          "name": "Reservoir",
+          "land_area_sqm": 24441517.21,
+          "land_area_sq_km": 24.44,
+          "land_area_ha": 2444.15
+        }
+      ]
+    },
+    "VI": {
+      "district_id": "VI",
+      "name": "District VI",
+      "barangay_count": 11,
+      "land_area_sqm": 21973875.32,
+      "land_area_sq_km": 21.97,
+      "land_area_ha": 2197.39,
+      "population_2020": 514516,
+      "population_density_per_ha": 234,
+      "barangays": [
+        {
+          "source_area_id": 11,
+          "barangay_name": "Apolonio Samson",
+          "land_area_sqm": 1925086.9,
+          "land_area_sq_km": 1.93,
+          "land_area_ha": 192.51,
+          "population_2020": 33629,
+          "population_density_per_ha": 175
+        },
+        {
+          "source_area_id": 11,
+          "barangay_name": "Baesa",
+          "land_area_sqm": 1981648.95,
+          "land_area_sq_km": 1.98,
+          "land_area_ha": 198.16,
+          "population_2020": 55328,
+          "population_density_per_ha": 279
+        },
+        {
+          "source_area_id": 11,
+          "barangay_name": "Balon-Bato",
+          "land_area_sqm": 372773.28,
+          "land_area_sq_km": 0.37,
+          "land_area_ha": 37.28,
+          "population_2020": 6991,
+          "population_density_per_ha": 188
+        },
+        {
+          "source_area_id": 12,
+          "barangay_name": "Culiat",
+          "land_area_sqm": 2516602.01,
+          "land_area_sq_km": 2.52,
+          "land_area_ha": 251.66,
+          "population_2020": 67804,
+          "population_density_per_ha": 269
+        },
+        {
+          "source_area_id": 12,
+          "barangay_name": "New Era",
+          "land_area_sqm": 619605.68,
+          "land_area_sq_km": 0.62,
+          "land_area_ha": 61.96,
+          "population_2020": 14105,
+          "population_density_per_ha": 228
+        },
+        {
+          "source_area_id": 12,
+          "barangay_name": "Pasong Tamo",
+          "land_area_sqm": 4976006.07,
+          "land_area_sq_km": 4.98,
+          "land_area_ha": 497.6,
+          "population_2020": 110738,
+          "population_density_per_ha": 223
+        },
+        {
+          "source_area_id": 11,
+          "barangay_name": "Sangandaan",
+          "land_area_sqm": 895803.15,
+          "land_area_sq_km": 0.9,
+          "land_area_ha": 89.58,
+          "population_2020": 21061,
+          "population_density_per_ha": 235
+        },
+        {
+          "source_area_id": 10,
+          "barangay_name": "Sauyo",
+          "land_area_sqm": 2759557.8,
+          "land_area_sq_km": 2.76,
+          "land_area_ha": 275.96,
+          "population_2020": 76289,
+          "population_density_per_ha": 276
+        },
+        {
+          "source_area_id": 10,
+          "barangay_name": "Talipapa",
+          "land_area_sqm": 1819590.6,
+          "land_area_sq_km": 1.82,
+          "land_area_ha": 181.96,
+          "population_2020": 38949,
+          "population_density_per_ha": 214
+        },
+        {
+          "source_area_id": 12,
+          "barangay_name": "Tandang Sora",
+          "land_area_sqm": 3907821.85,
+          "land_area_sq_km": 3.91,
+          "land_area_ha": 390.78,
+          "population_2020": 83114,
+          "population_density_per_ha": 213
+        },
+        {
+          "source_area_id": 11,
+          "barangay_name": "Unang Sigaw",
+          "land_area_sqm": 199379.02,
+          "land_area_sq_km": 0.2,
+          "land_area_ha": 19.94,
+          "population_2020": 6508,
+          "population_density_per_ha": 326
+        }
+      ],
+      "non_barangay_areas": []
+    }
+  }
+}

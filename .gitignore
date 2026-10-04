@@ -1,0 +1,20 @@
+venv/
+.venv/
+node_modules/
+dist/
+npm-debug.log*
+__pycache__/
+*.py[cod]
+.env
+output/
+data/processed/
+data/raw/CPDD/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Keep required trained model artifacts available
+!backend/models/trained/
+!backend/models/trained/*.pt
+!backend/models/trained/.gitkeep
+venv_old/

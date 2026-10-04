@@ -1,0 +1,21 @@
+{
+  "is_sample": true,
+  "prototype_version": "1.0.0-cpdd",
+  "sample_updated_at": "2026-08-28",
+  "data_source": "Static demonstration historical dataset",
+  "disclaimer": "This information is for demonstration purposes only and should not be used for actual public-health decisions.",
+  "historical_data": [
+    { "year": 2024, "week": 34, "district": "District I", "cases": 6, "rainfall": 12.5, "risk": "low" },
+    { "year": 2024, "week": 34, "district": "District II", "cases": 4, "rainfall": 15.0, "risk": "low" },
+    { "year": 2024, "week": 34, "district": "District III", "cases": 9, "rainfall": 10.2, "risk": "low" },
+    { "year": 2024, "week": 34, "district": "District IV", "cases": 30, "rainfall": 25.5, "risk": "medium" },
+    { "year": 2024, "week": 34, "district": "District V", "cases": 77, "rainfall": 45.0, "risk": "high" },
+    { "year": 2024, "week": 34, "district": "District VI", "cases": 22, "rainfall": 18.3, "risk": "medium" },
+    { "year": 2024, "week": 33, "district": "District I", "cases": 5, "rainfall": 8.5, "risk": "low" },
+    { "year": 2024, "week": 33, "district": "District II", "cases": 3, "rainfall": 12.0, "risk": "low" },
+    { "year": 2024, "week": 33, "district": "District III", "cases": 8, "rainfall": 9.0, "risk": "low" },
+    { "year": 2024, "week": 33, "district": "District IV", "cases": 28, "rainfall": 20.5, "risk": "medium" },
+    { "year": 2024, "week": 33, "district": "District V", "cases": 70, "rainfall": 40.0, "risk": "high" },
+    { "year": 2024, "week": 33, "district": "District VI", "cases": 20, "rainfall": 15.3, "risk": "medium" }
+  ]
+}

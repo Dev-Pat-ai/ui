@@ -1,0 +1,51 @@
+{
+  "is_sample": true,
+  "prototype_version": "1.0.0-cpdd",
+  "sample_updated_at": "2026-08-28",
+  "data_source": "Static demonstration epidemiological dataset",
+  "disclaimer": "Risk, recent cases, rainfall, and status are demonstration values. Coverage, population, area, and density are added by the API from the CPDD/PSA 2020 reference dataset.",
+  "districts": {
+    "I": {
+      "name": "District I",
+      "status": "Stable",
+      "risk": "low",
+      "recent_cases": 6,
+      "avg_rainfall": "12.5mm"
+    },
+    "II": {
+      "name": "District II",
+      "status": "Rising",
+      "risk": "low",
+      "recent_cases": 4,
+      "avg_rainfall": "15.0mm"
+    },
+    "III": {
+      "name": "District III",
+      "status": "Stable",
+      "risk": "low",
+      "recent_cases": 9,
+      "avg_rainfall": "10.2mm"
+    },
+    "IV": {
+      "name": "District IV",
+      "status": "Monitoring",
+      "risk": "medium",
+      "recent_cases": 30,
+      "avg_rainfall": "25.5mm"
+    },
+    "V": {
+      "name": "District V",
+      "status": "Warning",
+      "risk": "high",
+      "recent_cases": 77,
+      "avg_rainfall": "45.0mm"
+    },
+    "VI": {
+      "name": "District VI",
+      "status": "Stable",
+      "risk": "medium",
+      "recent_cases": 22,
+      "avg_rainfall": "18.3mm"
+    }
+  }
+}

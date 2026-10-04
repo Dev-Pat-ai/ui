@@ -1,0 +1,281 @@
+{
+  "is_authoritative_reference": true,
+  "is_sample": false,
+  "publisher": "Quezon City Planning and Development Department (CPDDO)",
+  "office_address": "4th Floor Civic Center Building D, Quezon City Hall Compound, Elliptical Road, Diliman, Quezon City",
+  "publication_year": 2026,
+  "geographic_coordinate_system": "GCS_PRS_1992",
+  "projected_coordinate_system": "Philippines Zone III (PRS 1992)",
+  "datum": "Philippine Reference System 1992",
+  "total_categories": 7,
+  "categories": [
+    {
+      "id": "health",
+      "title": "Health Facilities",
+      "subtitle": "Quezon City Hospitals, Super Health Centers, & Barangay Health Centers",
+      "icon": "🏥",
+      "badge": "Priority Diagnostic Hubs",
+      "web_asset_url": "assets/images/maps/qc_health_facilities_2026.jpg",
+      "dimensions": {
+        "web": {
+          "width": 13244,
+          "height": 18724,
+          "size_bytes": 28272368
+        },
+        "original": {
+          "width": 13244,
+          "height": 18724,
+          "size_bytes": 28272368
+        }
+      },
+      "sha256": {
+        "web": "3ea2a27dd75e76b9a987d6e0af361491594060912effdebed5144e996ebc15ca",
+        "original": "d937ddc72719a7908d50cfa2d30636568540ed91e3144e217f044b5c60d53c1b"
+      },
+      "legend": [
+        {
+          "label": "Health Facilities",
+          "color": "#c53030",
+          "shape": "Heartbeat circle icon",
+          "description": "Tertiary hospitals, Super Health Centers, Barangay Health Centers"
+        }
+      ],
+      "dengue_relevance": {
+        "role": "Frontline Clinical Access & Diagnostic Testing",
+        "clinical_significance": "Essential sites for early Dengue NS1 antigen rapid diagnostic testing, CBC/platelet monitoring, oral rehydration therapy (ORT), and inpatient referral.",
+        "flood_compound_risk": "CDRA 2022 Section 3.7.3 identifies 12 health centers and 13 hospitals in areas subject to >0.5m flood depth during severe storms (e.g., Brgys Sienna, West Triangle, Milagrosa, Central, Damayang Lagi, Doña Imelda). Compounded monsoon flooding risks cutting off critical healthcare triage during dengue outbreaks."
+      },
+      "is_uncompressed_high_res": true
+    },
+    {
+      "id": "schools",
+      "title": "Public Schools",
+      "subtitle": "Quezon City Public Elementary & High Schools",
+      "icon": "🏫",
+      "badge": "High Pediatric Exposure",
+      "web_asset_url": "assets/images/maps/qc_public_schools_2026.jpg",
+      "dimensions": {
+        "web": {
+          "width": 13244,
+          "height": 18724,
+          "size_bytes": 28462841
+        },
+        "original": {
+          "width": 13244,
+          "height": 18724,
+          "size_bytes": 28462841
+        }
+      },
+      "sha256": {
+        "web": "0673dabd9ffa1fe1227e659da61ec45dadd36652d16f6311ac0029a1658b3216",
+        "original": "8717dc40b07d6b4e575d35c40cd18dc497df3d748d65b2a2820fb1e9eceed0c9"
+      },
+      "legend": [
+        {
+          "label": "High Schools",
+          "color": "#dd6b20",
+          "shape": "Orange building emblem",
+          "description": "Public junior & senior high schools"
+        },
+        {
+          "label": "Elementary Schools",
+          "color": "#805ad5",
+          "shape": "Purple building emblem",
+          "description": "Public primary & elementary schools"
+        }
+      ],
+      "dengue_relevance": {
+        "role": "Pediatric Congregate Setting & Daytime Transmission",
+        "clinical_significance": "Quezon City eLLCAP 2021-2050 (pp. 33-35) highlights that children under 15 comprise 30% of the city population and suffer the highest morbidity from dengue shock syndrome.",
+        "diurnal_exposure": "Aedes aegypti mosquitoes are daytime biters with peak feeding between 6:00-9:00 AM and 3:00-6:00 PM, exactly coinciding with school class hours and outdoor play."
+      },
+      "is_uncompressed_high_res": true
+    },
+    {
+      "id": "daycare",
+      "title": "Child Development Centers",
+      "subtitle": "Quezon City Barangay Day Care & Early Childhood Centers",
+      "icon": "👶",
+      "badge": "High Vulnerability",
+      "web_asset_url": "assets/images/maps/qc_child_development_centers_2026.jpg",
+      "dimensions": {
+        "web": {
+          "width": 13244,
+          "height": 18724,
+          "size_bytes": 29096711
+        },
+        "original": {
+          "width": 13244,
+          "height": 18724,
+          "size_bytes": 29096711
+        }
+      },
+      "sha256": {
+        "web": "638778fc9ca8c115bb525b5ca21d6878793de3fd7b60c5012b82bc171711728c",
+        "original": "1e5d700ffc8dfc931c8b2e539a98e3197fa0189d2eec66516ec97a6b44263a6d"
+      },
+      "legend": [
+        {
+          "label": "Child Development Centers",
+          "color": "#2b6cb0",
+          "shape": "Blue building emblem",
+          "description": "Barangay early childhood care and development centers"
+        }
+      ],
+      "dengue_relevance": {
+        "role": "Early Childhood & Infant Care Cohort",
+        "clinical_significance": "Toddlers and infants have underdeveloped immune systems, presenting the greatest risk of rapid dehydration and severe capillary leakage when infected with dengue.",
+        "environmental_focus": "Requires rigorous daily search-and-destroy of artificial container breeding sites in center courtyards, toy bins, and plant saucers."
+      },
+      "is_uncompressed_high_res": true
+    },
+    {
+      "id": "higher_ed",
+      "title": "Higher Education Institutions",
+      "subtitle": "State Universities, Colleges, & Higher Ed Campuses",
+      "icon": "🎓",
+      "badge": "Large Campuses",
+      "web_asset_url": "assets/images/maps/qc_higher_education_2026.jpg",
+      "dimensions": {
+        "web": {
+          "width": 13244,
+          "height": 18724,
+          "size_bytes": 28355688
+        },
+        "original": {
+          "width": 13244,
+          "height": 18724,
+          "size_bytes": 28355688
+        }
+      },
+      "sha256": {
+        "web": "77c66179032e54cb171b9483bb04056274c4adc6cf8437c62a1cce964141df3b",
+        "original": "790f41cc1c484e8c6d1a8f14de8fdc4dc04373abe7cff388f675659664af8608"
+      },
+      "legend": [
+        {
+          "label": "Higher Education Institutions",
+          "color": "#2c7a7b",
+          "shape": "Teal graduation emblem",
+          "description": "Universities, colleges, and tertiary institutes"
+        }
+      ],
+      "dengue_relevance": {
+        "role": "High Daytime Foot Traffic & Expansive Campus Grounds",
+        "clinical_significance": "Vast green spaces and campus waterways (such as UP Diliman and Ateneo grounds) require proactive vector control and drainage maintenance."
+      },
+      "is_uncompressed_high_res": true
+    },
+    {
+      "id": "fire",
+      "title": "Fire Stations",
+      "subtitle": "Bureau of Fire Protection & Volunteer Fire Stations",
+      "icon": "🚒",
+      "badge": "Emergency Lifelines",
+      "web_asset_url": "assets/images/maps/qc_fire_stations_2026.jpg",
+      "dimensions": {
+        "web": {
+          "width": 13244,
+          "height": 18724,
+          "size_bytes": 28039148
+        },
+        "original": {
+          "width": 13244,
+          "height": 18724,
+          "size_bytes": 28039148
+        }
+      },
+      "sha256": {
+        "web": "1bfb7ea447d8df78ecb32d2ea1f72bc9aee692c02de65ba68b372f912e48ed2a",
+        "original": "c51d1a1d4f1b0d86dd192f656f3e246b591fc7fa186a005e4b90eee7f72a1ea4"
+      },
+      "legend": [
+        {
+          "label": "Fire Stations",
+          "color": "#e53e3e",
+          "shape": "Red station emblem",
+          "description": "BFP stations and accredited volunteer brigades"
+        }
+      ],
+      "dengue_relevance": {
+        "role": "Disaster Response & Vector Control Logistics",
+        "clinical_significance": "Staging hubs for water dewatering in flooded barangays and mobile misting/fogging operations during post-flood dengue outbreaks."
+      },
+      "is_uncompressed_high_res": true
+    },
+    {
+      "id": "police",
+      "title": "Police Stations & Jails",
+      "subtitle": "QCPD Police Stations, Sub-stations, & Detention Facilities",
+      "icon": "🚓",
+      "badge": "Security & Congregate",
+      "web_asset_url": "assets/images/maps/qc_police_jails_2026.jpg",
+      "dimensions": {
+        "web": {
+          "width": 13244,
+          "height": 18724,
+          "size_bytes": 28065513
+        },
+        "original": {
+          "width": 13244,
+          "height": 18724,
+          "size_bytes": 28065513
+        }
+      },
+      "sha256": {
+        "web": "a6fababf0b9769a0f2f7ee03a649b52a60efdcb773d1352aeec3ba51c7dc350c",
+        "original": "96cd19fcc178568ffc3bd06abbd7005ea3e8f9fda0cdf95aa56786e069df843e"
+      },
+      "legend": [
+        {
+          "label": "Police Stations & Jails",
+          "color": "#1a365d",
+          "shape": "Navy badge emblem",
+          "description": "Police precincts and detention centers"
+        }
+      ],
+      "dengue_relevance": {
+        "role": "High-Density Congregate Facilities",
+        "clinical_significance": "Detention cells and precincts require targeted vector management to prevent rapid institutional transmission cycles."
+      },
+      "is_uncompressed_high_res": true
+    },
+    {
+      "id": "libraries",
+      "title": "Public Libraries",
+      "subtitle": "Quezon City Main Library & Barangay Branch Libraries",
+      "icon": "📚",
+      "badge": "Civic Centers",
+      "web_asset_url": "assets/images/maps/qc_public_libraries_2026.jpg",
+      "dimensions": {
+        "web": {
+          "width": 13244,
+          "height": 18724,
+          "size_bytes": 20880379
+        },
+        "original": {
+          "width": 13244,
+          "height": 18724,
+          "size_bytes": 20880379
+        }
+      },
+      "sha256": {
+        "web": "776c914498865b79b7a9cf7b1d7d05ef0738be6ff03e7687cb434f8825e1a0a0",
+        "original": "cc7d9054aa47cb629245dfe9c6883866c91acc1c1d33e1896951bccb77f6c939"
+      },
+      "legend": [
+        {
+          "label": "Public Libraries",
+          "color": "#744210",
+          "shape": "Brown book emblem",
+          "description": "City central and barangay branch libraries"
+        }
+      ],
+      "dengue_relevance": {
+        "role": "Community Information & IEC Dissemination Hubs",
+        "clinical_significance": "Public venues for distributing DOH 4S anti-dengue information, education, and communication materials to families and students."
+      },
+      "is_uncompressed_high_res": true
+    }
+  ]
+}

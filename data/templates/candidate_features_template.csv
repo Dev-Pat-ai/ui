@@ -1,0 +1,8 @@
+epi_year,epi_week,district_id,feature_name,feature_value,unit,data_source
+# epi_year: 4-digit year
+# epi_week: Epidemiological week (or 0 for annual data)
+# district_id: Quezon City District (I-VI)
+# feature_name: Canonical name from the Research Data Contract
+# feature_value: Numeric or categorical value
+# unit: Unit of measurement (e.g. index, percent, count)
+# data_source: Source agency

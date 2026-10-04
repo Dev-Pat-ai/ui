@@ -1,0 +1,19 @@
+{
+  "name": "denguesense-qc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static frontend build commands for the DengueSense QC research prototype.",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "share": "node scripts/share.mjs",
+    "share:stop": "node scripts/share.mjs --stop",
+    "build": "node scripts/build-frontend.mjs",
+    "clean": "node scripts/build-frontend.mjs --clean",
+    "check:frontend": "node --check frontend/js/app.js",
+    "test:frontend": "node --test tests/frontend_auth_session.test.js tests/frontend_forecast_state.test.js tests/frontend_mobile_layout.test.js",
+    "test:frontend:browser": "node scripts/check-frontend-layout.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

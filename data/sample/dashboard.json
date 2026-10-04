@@ -1,0 +1,35 @@
+{
+  "is_sample": true,
+  "prototype_version": "1.0.0-cpdd",
+  "sample_updated_at": "2026-08-28",
+  "data_source": "Static demonstration epidemiological dataset",
+  "disclaimer": "Cases, forecasts, risks, and alerts are demonstration values. District demographics are added by the API from the CPDD/PSA 2020 reference dataset.",
+  "alerts": [
+    {
+      "title": "WARNING - DISTRICT V - HIGH RISK",
+      "description": "Dengue cases expected to rise sharply in District V over the next 2 weeks.",
+      "time": "2 hours ago",
+      "level": "high"
+    },
+    {
+      "title": "CAUTION - DISTRICT IV - MODERATE RISK",
+      "description": "Case trend in District IV is rising. Risk level may escalate to High if rainfall continues above seasonal average.",
+      "time": "1 day ago",
+      "level": "medium"
+    },
+    {
+      "title": "CAUTION - DISTRICT VI - MODERATE RISK",
+      "description": "Humidity levels in District VI have exceeded 85% for 3 consecutive weeks - favorable conditions for mosquito breeding.",
+      "time": "2 days ago",
+      "level": "medium"
+    }
+  ],
+  "districts": [
+    { "district": "District I", "sampleCases": 6, "prevCases": 5, "forecast": 8, "risk": "low" },
+    { "district": "District II", "sampleCases": 4, "prevCases": 3, "forecast": 10, "risk": "low" },
+    { "district": "District III", "sampleCases": 9, "prevCases": 8, "forecast": 15, "risk": "low" },
+    { "district": "District IV", "sampleCases": 30, "prevCases": 28, "forecast": 42, "risk": "medium" },
+    { "district": "District V", "sampleCases": 77, "prevCases": 70, "forecast": 85, "risk": "high" },
+    { "district": "District VI", "sampleCases": 22, "prevCases": 20, "forecast": 32, "risk": "medium" }
+  ]
+}

@@ -1,0 +1,1526 @@
+{
+  "dataset_id": "qc_psa_barangay_households_2020",
+  "title": "Quezon City Barangay Population and Households, 2020 Census",
+  "is_sample": false,
+  "is_authoritative_reference": true,
+  "reference_year": 2020,
+  "reference_date": "2020-05-01",
+  "observation_type": "census_actual",
+  "geographic_scope": "Quezon City",
+  "publisher": "Philippine Statistics Authority (PSA)",
+  "provided_by": "Quezon City Planning and Development Department (CPDD)",
+  "source_document": {
+    "path": "data/raw/CPDD/Quezon City Educational Research Files/Demographic Data (Population)/PSA-2020-HH-BY-barangay-QC.xlsx",
+    "sha256": "12b38dc4d37ea6aa07c368c7a16cab37acdc63b6c3c0ceed0dcc9bc3c698381d",
+    "sheet": "by Bgy_1",
+    "city_control_cells": "A1015:D1015",
+    "barangay_cells": "A1016:D1157"
+  },
+  "geographic_mapping": {
+    "dataset_id": "qc_cpdd_district_reference_2020",
+    "path": "data/authoritative/cpdd/district_profiles_2020.json",
+    "sha256": "e26d7d8867cdea4b05b0197d2e3f5331705567ab6b356f6d23e2f065a3fb6bfa",
+    "reference_year": 2020
+  },
+  "field_definitions": {
+    "population_2020": {
+      "unit": "persons",
+      "definition": "Total population, including institutional population."
+    },
+    "household_population_2020": {
+      "unit": "persons",
+      "definition": "Household population, excluding institutional population."
+    },
+    "households_2020": {
+      "unit": "households",
+      "definition": "Number of households."
+    },
+    "average_household_size": {
+      "unit": "persons per household",
+      "is_derived": true,
+      "formula": "household_population_2020 / households_2020",
+      "decimal_places": 6
+    }
+  },
+  "notes": [
+    "Observed census reference data. This import does not train a prediction model.",
+    "Only the visible by Bgy_1 Quezon City block is imported; duplicate sheets and other cities are excluded.",
+    "Population projections, land area and density are not combined with these census observations.",
+    "Average household size uses household population, not total population; aggregate ratios use aggregate counts.",
+    "The source workbook has no pcode column. Any retained geographic codes come from the canonical mapping."
+  ],
+  "city_summary": {
+    "district_count": 6,
+    "barangay_count": 142,
+    "population_2020": 2960048,
+    "household_population_2020": 2950493,
+    "households_2020": 738724,
+    "average_household_size": 3.99404
+  },
+  "district_summaries": {
+    "I": {
+      "barangay_count": 37,
+      "population_2020": 384384,
+      "household_population_2020": 382986,
+      "households_2020": 101903,
+      "average_household_size": 3.758339
+    },
+    "II": {
+      "barangay_count": 5,
+      "population_2020": 738328,
+      "household_population_2020": 737899,
+      "households_2020": 175996,
+      "average_household_size": 4.192703
+    },
+    "III": {
+      "barangay_count": 37,
+      "population_2020": 319371,
+      "household_population_2020": 318433,
+      "households_2020": 80182,
+      "average_household_size": 3.971378
+    },
+    "IV": {
+      "barangay_count": 38,
+      "population_2020": 407402,
+      "household_population_2020": 402857,
+      "households_2020": 107184,
+      "average_household_size": 3.758555
+    },
+    "V": {
+      "barangay_count": 14,
+      "population_2020": 596047,
+      "household_population_2020": 595117,
+      "households_2020": 141329,
+      "average_household_size": 4.210863
+    },
+    "VI": {
+      "barangay_count": 11,
+      "population_2020": 514516,
+      "household_population_2020": 513201,
+      "households_2020": 132130,
+      "average_household_size": 3.884061
+    }
+  },
+  "barangays": [
+    {
+      "barangay_name": "Alicia",
+      "district_id": "I",
+      "source_barangay_name": "Alicia",
+      "source_cells": "A1016:D1016",
+      "population_2020": 6119,
+      "household_population_2020": 6119,
+      "households_2020": 1609,
+      "average_household_size": 3.802983
+    },
+    {
+      "barangay_name": "Bagong Pag-asa",
+      "district_id": "I",
+      "source_barangay_name": "Bagong Pag-asa",
+      "source_cells": "A1024:D1024",
+      "population_2020": 29389,
+      "household_population_2020": 29221,
+      "households_2020": 7551,
+      "average_household_size": 3.869819
+    },
+    {
+      "barangay_name": "Bahay Toro",
+      "district_id": "I",
+      "source_barangay_name": "Bahay Toro",
+      "source_cells": "A1027:D1027",
+      "population_2020": 59639,
+      "household_population_2020": 59576,
+      "households_2020": 16000,
+      "average_household_size": 3.7235
+    },
+    {
+      "barangay_name": "Balingasa",
+      "district_id": "I",
+      "source_barangay_name": "Balingasa",
+      "source_cells": "A1028:D1028",
+      "population_2020": 19260,
+      "household_population_2020": 19244,
+      "households_2020": 4667,
+      "average_household_size": 4.12342
+    },
+    {
+      "barangay_name": "Bungad",
+      "district_id": "I",
+      "source_barangay_name": "Bungad",
+      "source_cells": "A1033:D1033",
+      "population_2020": 7014,
+      "household_population_2020": 7014,
+      "households_2020": 2028,
+      "average_household_size": 3.45858
+    },
+    {
+      "barangay_name": "Damar",
+      "district_id": "I",
+      "source_barangay_name": "Damar",
+      "source_cells": "A1041:D1041",
+      "population_2020": 952,
+      "household_population_2020": 952,
+      "households_2020": 211,
+      "average_household_size": 4.511848
+    },
+    {
+      "barangay_name": "Damayan",
+      "district_id": "I",
+      "source_barangay_name": "Damayan",
+      "source_cells": "A1042:D1042",
+      "population_2020": 6007,
+      "household_population_2020": 6007,
+      "households_2020": 1704,
+      "average_household_size": 3.525235
+    },
+    {
+      "barangay_name": "Del Monte",
+      "district_id": "I",
+      "source_barangay_name": "Del Monte",
+      "source_cells": "A1044:D1044",
+      "population_2020": 10595,
+      "household_population_2020": 10236,
+      "households_2020": 2921,
+      "average_household_size": 3.504279
+    },
+    {
+      "barangay_name": "Katipunan",
+      "district_id": "I",
+      "source_barangay_name": "Katipunan",
+      "source_cells": "A1064:D1064",
+      "population_2020": 10508,
+      "household_population_2020": 10508,
+      "households_2020": 2444,
+      "average_household_size": 4.299509
+    },
+    {
+      "barangay_name": "Lourdes",
+      "district_id": "I",
+      "source_barangay_name": "Lourdes",
+      "source_cells": "A1069:D1069",
+      "population_2020": 4523,
+      "household_population_2020": 4410,
+      "households_2020": 1135,
+      "average_household_size": 3.885463
+    },
+    {
+      "barangay_name": "Maharlika",
+      "district_id": "I",
+      "source_barangay_name": "Maharlika",
+      "source_cells": "A1071:D1071",
+      "population_2020": 4349,
+      "household_population_2020": 4332,
+      "households_2020": 1215,
+      "average_household_size": 3.565432
+    },
+    {
+      "barangay_name": "Manresa",
+      "district_id": "I",
+      "source_barangay_name": "Manresa",
+      "source_cells": "A1073:D1073",
+      "population_2020": 17224,
+      "household_population_2020": 17159,
+      "households_2020": 4782,
+      "average_household_size": 3.588248
+    },
+    {
+      "barangay_name": "Mariblo",
+      "district_id": "I",
+      "source_barangay_name": "Mariblo",
+      "source_cells": "A1076:D1076",
+      "population_2020": 3433,
+      "household_population_2020": 3433,
+      "households_2020": 1012,
+      "average_household_size": 3.392292
+    },
+    {
+      "barangay_name": "Masambong",
+      "district_id": "I",
+      "source_barangay_name": "Masambong",
+      "source_cells": "A1079:D1079",
+      "population_2020": 8800,
+      "household_population_2020": 8779,
+      "households_2020": 2303,
+      "average_household_size": 3.811984
+    },
+    {
+      "barangay_name": "N. S. Amoranto (Gintong Silahis)",
+      "district_id": "I",
+      "source_barangay_name": "N.S. Amoranto (Gintong Silahis)",
+      "source_cells": "A1057:D1057",
+      "population_2020": 5952,
+      "household_population_2020": 5850,
+      "households_2020": 1559,
+      "average_household_size": 3.752405
+    },
+    {
+      "barangay_name": "Nayong Kanluran",
+      "district_id": "I",
+      "source_barangay_name": "Nayong Kanluran",
+      "source_cells": "A1084:D1084",
+      "population_2020": 2456,
+      "household_population_2020": 2456,
+      "households_2020": 663,
+      "average_household_size": 3.704374
+    },
+    {
+      "barangay_name": "Paang Bundok",
+      "district_id": "I",
+      "source_barangay_name": "Paang Bundok",
+      "source_cells": "A1088:D1088",
+      "population_2020": 4806,
+      "household_population_2020": 4806,
+      "households_2020": 1159,
+      "average_household_size": 4.146678
+    },
+    {
+      "barangay_name": "Pag-ibig sa Nayon",
+      "district_id": "I",
+      "source_barangay_name": "Pag-ibig Sa Nayon",
+      "source_cells": "A1089:D1089",
+      "population_2020": 5918,
+      "household_population_2020": 5915,
+      "households_2020": 1508,
+      "average_household_size": 3.922414
+    },
+    {
+      "barangay_name": "Paltok",
+      "district_id": "I",
+      "source_barangay_name": "Paltok",
+      "source_cells": "A1091:D1091",
+      "population_2020": 18124,
+      "household_population_2020": 18117,
+      "households_2020": 4435,
+      "average_household_size": 4.085006
+    },
+    {
+      "barangay_name": "Paraiso",
+      "district_id": "I",
+      "source_barangay_name": "Paraiso",
+      "source_cells": "A1093:D1093",
+      "population_2020": 3537,
+      "household_population_2020": 3537,
+      "households_2020": 909,
+      "average_household_size": 3.891089
+    },
+    {
+      "barangay_name": "Phil-Am",
+      "district_id": "I",
+      "source_barangay_name": "Phil-Am",
+      "source_cells": "A1096:D1096",
+      "population_2020": 2524,
+      "household_population_2020": 2515,
+      "households_2020": 604,
+      "average_household_size": 4.163907
+    },
+    {
+      "barangay_name": "Project 6",
+      "district_id": "I",
+      "source_barangay_name": "Project 6",
+      "source_cells": "A1099:D1099",
+      "population_2020": 11899,
+      "household_population_2020": 11832,
+      "households_2020": 3181,
+      "average_household_size": 3.719585
+    },
+    {
+      "barangay_name": "Ramon Magsaysay",
+      "district_id": "I",
+      "source_barangay_name": "Ramon Magsaysay",
+      "source_cells": "A1104:D1104",
+      "population_2020": 14321,
+      "household_population_2020": 14321,
+      "households_2020": 3582,
+      "average_household_size": 3.998046
+    },
+    {
+      "barangay_name": "Saint Peter",
+      "district_id": "I",
+      "source_barangay_name": "Saint Peter",
+      "source_cells": "A1108:D1108",
+      "population_2020": 4049,
+      "household_population_2020": 4049,
+      "households_2020": 1008,
+      "average_household_size": 4.016865
+    },
+    {
+      "barangay_name": "Salvacion",
+      "district_id": "I",
+      "source_barangay_name": "Salvacion",
+      "source_cells": "A1109:D1109",
+      "population_2020": 6681,
+      "household_population_2020": 6681,
+      "households_2020": 1895,
+      "average_household_size": 3.525594
+    },
+    {
+      "barangay_name": "San Antonio",
+      "district_id": "I",
+      "source_barangay_name": "San Antonio",
+      "source_cells": "A1111:D1111",
+      "population_2020": 22229,
+      "household_population_2020": 22229,
+      "households_2020": 6193,
+      "average_household_size": 3.589375
+    },
+    {
+      "barangay_name": "San Isidro Labrador",
+      "district_id": "I",
+      "source_barangay_name": "San Isidro Labrador",
+      "source_cells": "A1114:D1114",
+      "population_2020": 6247,
+      "household_population_2020": 6243,
+      "households_2020": 1740,
+      "average_household_size": 3.587931
+    },
+    {
+      "barangay_name": "San Jose",
+      "district_id": "I",
+      "source_barangay_name": "San Jose",
+      "source_cells": "A1115:D1115",
+      "population_2020": 5844,
+      "household_population_2020": 5844,
+      "households_2020": 1452,
+      "average_household_size": 4.024793
+    },
+    {
+      "barangay_name": "Santa Cruz",
+      "district_id": "I",
+      "source_barangay_name": "Santa Cruz",
+      "source_cells": "A1119:D1119",
+      "population_2020": 3945,
+      "household_population_2020": 3945,
+      "households_2020": 1060,
+      "average_household_size": 3.721698
+    },
+    {
+      "barangay_name": "Santa Teresita",
+      "district_id": "I",
+      "source_barangay_name": "Santa Teresita",
+      "source_cells": "A1122:D1122",
+      "population_2020": 11776,
+      "household_population_2020": 11752,
+      "households_2020": 2843,
+      "average_household_size": 4.133662
+    },
+    {
+      "barangay_name": "Santo Cristo",
+      "district_id": "I",
+      "source_barangay_name": "Santo Cristo",
+      "source_cells": "A1123:D1123",
+      "population_2020": 25783,
+      "household_population_2020": 25697,
+      "households_2020": 7577,
+      "average_household_size": 3.391448
+    },
+    {
+      "barangay_name": "Sienna",
+      "district_id": "I",
+      "source_barangay_name": "Sienna",
+      "source_cells": "A1127:D1127",
+      "population_2020": 2072,
+      "household_population_2020": 2009,
+      "households_2020": 503,
+      "average_household_size": 3.994036
+    },
+    {
+      "barangay_name": "Sto. Domingo (Matalahib)",
+      "district_id": "I",
+      "source_barangay_name": "Santo Domingo (Matalahib)",
+      "source_cells": "A1080:D1080",
+      "population_2020": 11476,
+      "household_population_2020": 11353,
+      "households_2020": 3331,
+      "average_household_size": 3.408286
+    },
+    {
+      "barangay_name": "Talayan",
+      "district_id": "I",
+      "source_barangay_name": "Talayan",
+      "source_cells": "A1133:D1133",
+      "population_2020": 4402,
+      "household_population_2020": 4402,
+      "households_2020": 1069,
+      "average_household_size": 4.117867
+    },
+    {
+      "barangay_name": "Vasra",
+      "district_id": "I",
+      "source_barangay_name": "Vasra",
+      "source_cells": "A1144:D1144",
+      "population_2020": 7345,
+      "household_population_2020": 7334,
+      "households_2020": 2107,
+      "average_household_size": 3.480778
+    },
+    {
+      "barangay_name": "Veterans Village",
+      "district_id": "I",
+      "source_barangay_name": "Veterans Village",
+      "source_cells": "A1145:D1145",
+      "population_2020": 12755,
+      "household_population_2020": 12693,
+      "households_2020": 3396,
+      "average_household_size": 3.737633
+    },
+    {
+      "barangay_name": "West Triangle",
+      "district_id": "I",
+      "source_barangay_name": "West Triangle",
+      "source_cells": "A1148:D1148",
+      "population_2020": 2431,
+      "household_population_2020": 2416,
+      "households_2020": 547,
+      "average_household_size": 4.416819
+    },
+    {
+      "barangay_name": "Bagong Silangan",
+      "district_id": "II",
+      "source_barangay_name": "Bagong Silangan",
+      "source_cells": "A1025:D1025",
+      "population_2020": 106886,
+      "household_population_2020": 106872,
+      "households_2020": 25888,
+      "average_household_size": 4.128245
+    },
+    {
+      "barangay_name": "Batasan Hills",
+      "district_id": "II",
+      "source_barangay_name": "Batasan Hills",
+      "source_cells": "A1154:D1154",
+      "population_2020": 166572,
+      "household_population_2020": 166477,
+      "households_2020": 39764,
+      "average_household_size": 4.186626
+    },
+    {
+      "barangay_name": "Commonwealth",
+      "district_id": "II",
+      "source_barangay_name": "Commonwealth",
+      "source_cells": "A1037:D1037",
+      "population_2020": 213229,
+      "household_population_2020": 213142,
+      "households_2020": 50126,
+      "average_household_size": 4.252125
+    },
+    {
+      "barangay_name": "Holy Spirit",
+      "district_id": "II",
+      "source_barangay_name": "Holy Spirit",
+      "source_cells": "A1155:D1155",
+      "population_2020": 111901,
+      "household_population_2020": 111768,
+      "households_2020": 27224,
+      "average_household_size": 4.105495
+    },
+    {
+      "barangay_name": "Payatas",
+      "district_id": "II",
+      "source_barangay_name": "Payatas",
+      "source_cells": "A1153:D1153",
+      "population_2020": 139740,
+      "household_population_2020": 139640,
+      "households_2020": 32994,
+      "average_household_size": 4.232285
+    },
+    {
+      "barangay_name": "Amihan",
+      "district_id": "III",
+      "source_barangay_name": "Amihan",
+      "source_cells": "A1017:D1017",
+      "population_2020": 3513,
+      "household_population_2020": 3513,
+      "households_2020": 915,
+      "average_household_size": 3.839344
+    },
+    {
+      "barangay_name": "Bagumbayan",
+      "district_id": "III",
+      "source_barangay_name": "Bagumbayan",
+      "source_cells": "A1026:D1026",
+      "population_2020": 22147,
+      "household_population_2020": 22147,
+      "households_2020": 5123,
+      "average_household_size": 4.323053
+    },
+    {
+      "barangay_name": "Bagumbuhay",
+      "district_id": "III",
+      "source_barangay_name": "Bagumbuhay",
+      "source_cells": "A1022:D1022",
+      "population_2020": 6681,
+      "household_population_2020": 6333,
+      "households_2020": 1723,
+      "average_household_size": 3.675566
+    },
+    {
+      "barangay_name": "Bayanihan",
+      "district_id": "III",
+      "source_barangay_name": "Bayanihan",
+      "source_cells": "A1029:D1029",
+      "population_2020": 613,
+      "household_population_2020": 613,
+      "households_2020": 194,
+      "average_household_size": 3.159794
+    },
+    {
+      "barangay_name": "Blue Ridge A",
+      "district_id": "III",
+      "source_barangay_name": "Blue Ridge A",
+      "source_cells": "A1030:D1030",
+      "population_2020": 1534,
+      "household_population_2020": 1534,
+      "households_2020": 334,
+      "average_household_size": 4.592814
+    },
+    {
+      "barangay_name": "Blue Ridge B",
+      "district_id": "III",
+      "source_barangay_name": "Blue Ridge B",
+      "source_cells": "A1031:D1031",
+      "population_2020": 1071,
+      "household_population_2020": 1071,
+      "households_2020": 215,
+      "average_household_size": 4.981395
+    },
+    {
+      "barangay_name": "Camp Aguinaldo",
+      "district_id": "III",
+      "source_barangay_name": "Camp Aguinaldo",
+      "source_cells": "A1034:D1034",
+      "population_2020": 3269,
+      "household_population_2020": 3269,
+      "households_2020": 664,
+      "average_household_size": 4.923193
+    },
+    {
+      "barangay_name": "Claro (Quirino 3-B)",
+      "district_id": "III",
+      "source_barangay_name": "Claro",
+      "source_cells": "A1036:D1036",
+      "population_2020": 3885,
+      "household_population_2020": 3885,
+      "households_2020": 1099,
+      "average_household_size": 3.535032
+    },
+    {
+      "barangay_name": "Dioquino Zobel",
+      "district_id": "III",
+      "source_barangay_name": "Dioquino Zobel",
+      "source_cells": "A1045:D1045",
+      "population_2020": 1805,
+      "household_population_2020": 1789,
+      "households_2020": 466,
+      "average_household_size": 3.839056
+    },
+    {
+      "barangay_name": "Duyan Duyan",
+      "district_id": "III",
+      "source_barangay_name": "Duyan-duyan",
+      "source_cells": "A1049:D1049",
+      "population_2020": 3357,
+      "household_population_2020": 3357,
+      "households_2020": 971,
+      "average_household_size": 3.457261
+    },
+    {
+      "barangay_name": "E. Rodriguez",
+      "district_id": "III",
+      "source_barangay_name": "E. Rodriguez",
+      "source_cells": "A1050:D1050",
+      "population_2020": 17363,
+      "household_population_2020": 17285,
+      "households_2020": 5076,
+      "average_household_size": 3.40524
+    },
+    {
+      "barangay_name": "East Kamias",
+      "district_id": "III",
+      "source_barangay_name": "East Kamias",
+      "source_cells": "A1051:D1051",
+      "population_2020": 6395,
+      "household_population_2020": 6389,
+      "households_2020": 1601,
+      "average_household_size": 3.990631
+    },
+    {
+      "barangay_name": "Escopa I",
+      "district_id": "III",
+      "source_barangay_name": "Escopa I",
+      "source_cells": "A1052:D1052",
+      "population_2020": 2110,
+      "household_population_2020": 2110,
+      "households_2020": 490,
+      "average_household_size": 4.306122
+    },
+    {
+      "barangay_name": "Escopa II",
+      "district_id": "III",
+      "source_barangay_name": "Escopa II",
+      "source_cells": "A1053:D1053",
+      "population_2020": 1683,
+      "household_population_2020": 1683,
+      "households_2020": 419,
+      "average_household_size": 4.016706
+    },
+    {
+      "barangay_name": "Escopa III",
+      "district_id": "III",
+      "source_barangay_name": "Escopa III",
+      "source_cells": "A1054:D1054",
+      "population_2020": 7985,
+      "household_population_2020": 7985,
+      "households_2020": 2001,
+      "average_household_size": 3.990505
+    },
+    {
+      "barangay_name": "Escopa IV",
+      "district_id": "III",
+      "source_barangay_name": "Escopa IV",
+      "source_cells": "A1055:D1055",
+      "population_2020": 1837,
+      "household_population_2020": 1837,
+      "households_2020": 499,
+      "average_household_size": 3.681363
+    },
+    {
+      "barangay_name": "Libis",
+      "district_id": "III",
+      "source_barangay_name": "Libis",
+      "source_cells": "A1068:D1068",
+      "population_2020": 4208,
+      "household_population_2020": 4208,
+      "households_2020": 1042,
+      "average_household_size": 4.038388
+    },
+    {
+      "barangay_name": "Loyola Heights",
+      "district_id": "III",
+      "source_barangay_name": "Loyola Heights",
+      "source_cells": "A1070:D1070",
+      "population_2020": 21140,
+      "household_population_2020": 20907,
+      "households_2020": 5024,
+      "average_household_size": 4.161425
+    },
+    {
+      "barangay_name": "Mangga",
+      "district_id": "III",
+      "source_barangay_name": "Mangga",
+      "source_cells": "A1074:D1074",
+      "population_2020": 913,
+      "household_population_2020": 913,
+      "households_2020": 239,
+      "average_household_size": 3.820084
+    },
+    {
+      "barangay_name": "Marilag",
+      "district_id": "III",
+      "source_barangay_name": "Marilag",
+      "source_cells": "A1077:D1077",
+      "population_2020": 12555,
+      "household_population_2020": 12534,
+      "households_2020": 2736,
+      "average_household_size": 4.58114
+    },
+    {
+      "barangay_name": "Masagana",
+      "district_id": "III",
+      "source_barangay_name": "Masagana",
+      "source_cells": "A1078:D1078",
+      "population_2020": 4166,
+      "household_population_2020": 4166,
+      "households_2020": 1090,
+      "average_household_size": 3.822018
+    },
+    {
+      "barangay_name": "Matandang Balara",
+      "district_id": "III",
+      "source_barangay_name": "Matandang Balara",
+      "source_cells": "A1081:D1081",
+      "population_2020": 69475,
+      "household_population_2020": 69397,
+      "households_2020": 17227,
+      "average_household_size": 4.028386
+    },
+    {
+      "barangay_name": "Milagrosa",
+      "district_id": "III",
+      "source_barangay_name": "Milagrosa",
+      "source_cells": "A1082:D1082",
+      "population_2020": 6775,
+      "household_population_2020": 6775,
+      "households_2020": 1602,
+      "average_household_size": 4.229089
+    },
+    {
+      "barangay_name": "Pansol",
+      "district_id": "III",
+      "source_barangay_name": "Pansol",
+      "source_cells": "A1092:D1092",
+      "population_2020": 35254,
+      "household_population_2020": 35234,
+      "households_2020": 7971,
+      "average_household_size": 4.420273
+    },
+    {
+      "barangay_name": "Quirino 2-A",
+      "district_id": "III",
+      "source_barangay_name": "Quirino 2-A",
+      "source_cells": "A1100:D1100",
+      "population_2020": 4622,
+      "household_population_2020": 4622,
+      "households_2020": 1210,
+      "average_household_size": 3.819835
+    },
+    {
+      "barangay_name": "Quirino 2-B",
+      "district_id": "III",
+      "source_barangay_name": "Quirino 2-B",
+      "source_cells": "A1101:D1101",
+      "population_2020": 3938,
+      "household_population_2020": 3922,
+      "households_2020": 1073,
+      "average_household_size": 3.655172
+    },
+    {
+      "barangay_name": "Quirino 2-C",
+      "district_id": "III",
+      "source_barangay_name": "Quirino 2-C",
+      "source_cells": "A1102:D1102",
+      "population_2020": 3189,
+      "household_population_2020": 3189,
+      "households_2020": 771,
+      "average_household_size": 4.136187
+    },
+    {
+      "barangay_name": "Quirino 3-A",
+      "district_id": "III",
+      "source_barangay_name": "Quirino 3-A",
+      "source_cells": "A1103:D1103",
+      "population_2020": 1070,
+      "household_population_2020": 1056,
+      "households_2020": 302,
+      "average_household_size": 3.496689
+    },
+    {
+      "barangay_name": "Saint Ignatius",
+      "district_id": "III",
+      "source_barangay_name": "Saint Ignatius",
+      "source_cells": "A1107:D1107",
+      "population_2020": 2054,
+      "household_population_2020": 2054,
+      "households_2020": 471,
+      "average_household_size": 4.360934
+    },
+    {
+      "barangay_name": "San Roque",
+      "district_id": "III",
+      "source_barangay_name": "San Roque",
+      "source_cells": "A1117:D1117",
+      "population_2020": 19093,
+      "household_population_2020": 19079,
+      "households_2020": 5054,
+      "average_household_size": 3.77503
+    },
+    {
+      "barangay_name": "Silangan",
+      "district_id": "III",
+      "source_barangay_name": "Silangan",
+      "source_cells": "A1129:D1129",
+      "population_2020": 4831,
+      "household_population_2020": 4814,
+      "households_2020": 1305,
+      "average_household_size": 3.688889
+    },
+    {
+      "barangay_name": "Socorro",
+      "district_id": "III",
+      "source_barangay_name": "Socorro",
+      "source_cells": "A1130:D1130",
+      "population_2020": 22227,
+      "household_population_2020": 22198,
+      "households_2020": 6755,
+      "average_household_size": 3.286158
+    },
+    {
+      "barangay_name": "Tagumpay",
+      "district_id": "III",
+      "source_barangay_name": "Tagumpay",
+      "source_cells": "A1132:D1132",
+      "population_2020": 2257,
+      "household_population_2020": 2257,
+      "households_2020": 612,
+      "average_household_size": 3.687908
+    },
+    {
+      "barangay_name": "Ugong Norte",
+      "district_id": "III",
+      "source_barangay_name": "Ugong Norte",
+      "source_cells": "A1141:D1141",
+      "population_2020": 6301,
+      "household_population_2020": 6301,
+      "households_2020": 1474,
+      "average_household_size": 4.274763
+    },
+    {
+      "barangay_name": "Villa Maria Clara",
+      "district_id": "III",
+      "source_barangay_name": "Villa Maria Clara",
+      "source_cells": "A1146:D1146",
+      "population_2020": 2442,
+      "household_population_2020": 2405,
+      "households_2020": 702,
+      "average_household_size": 3.425926
+    },
+    {
+      "barangay_name": "West Kamias",
+      "district_id": "III",
+      "source_barangay_name": "West Kamias",
+      "source_cells": "A1147:D1147",
+      "population_2020": 4055,
+      "household_population_2020": 4044,
+      "households_2020": 1094,
+      "average_household_size": 3.696527
+    },
+    {
+      "barangay_name": "White Plains",
+      "district_id": "III",
+      "source_barangay_name": "White Plains",
+      "source_cells": "A1149:D1149",
+      "population_2020": 3558,
+      "household_population_2020": 3558,
+      "households_2020": 638,
+      "average_household_size": 5.576803
+    },
+    {
+      "barangay_name": "Bagong Lipunan ng Crame",
+      "district_id": "IV",
+      "source_barangay_name": "Bagong Lipunan Ng Crame",
+      "source_cells": "A1023:D1023",
+      "population_2020": 13630,
+      "household_population_2020": 13630,
+      "households_2020": 3617,
+      "average_household_size": 3.768316
+    },
+    {
+      "barangay_name": "Botocan",
+      "district_id": "IV",
+      "source_barangay_name": "Botocan",
+      "source_cells": "A1032:D1032",
+      "population_2020": 7501,
+      "household_population_2020": 6643,
+      "households_2020": 1651,
+      "average_household_size": 4.023622
+    },
+    {
+      "barangay_name": "Central",
+      "district_id": "IV",
+      "source_barangay_name": "Central",
+      "source_cells": "A1035:D1035",
+      "population_2020": 19331,
+      "household_population_2020": 19331,
+      "households_2020": 5488,
+      "average_household_size": 3.522413
+    },
+    {
+      "barangay_name": "Damayang Lagi",
+      "district_id": "IV",
+      "source_barangay_name": "Damayang Lagi",
+      "source_cells": "A1043:D1043",
+      "population_2020": 19466,
+      "household_population_2020": 19364,
+      "households_2020": 5004,
+      "average_household_size": 3.869704
+    },
+    {
+      "barangay_name": "Don Manuel",
+      "district_id": "IV",
+      "source_barangay_name": "Don Manuel",
+      "source_cells": "A1048:D1048",
+      "population_2020": 1728,
+      "household_population_2020": 1728,
+      "households_2020": 334,
+      "average_household_size": 5.173653
+    },
+    {
+      "barangay_name": "Doña Aurora",
+      "district_id": "IV",
+      "source_barangay_name": "Aurora",
+      "source_cells": "A1019:D1019",
+      "population_2020": 4221,
+      "household_population_2020": 4221,
+      "households_2020": 1132,
+      "average_household_size": 3.728799
+    },
+    {
+      "barangay_name": "Doña Imelda",
+      "district_id": "IV",
+      "source_barangay_name": "Doña Imelda",
+      "source_cells": "A1046:D1046",
+      "population_2020": 11724,
+      "household_population_2020": 11701,
+      "households_2020": 3263,
+      "average_household_size": 3.585964
+    },
+    {
+      "barangay_name": "Doña Josefa",
+      "district_id": "IV",
+      "source_barangay_name": "Doña Josefa",
+      "source_cells": "A1047:D1047",
+      "population_2020": 1857,
+      "household_population_2020": 1857,
+      "households_2020": 377,
+      "average_household_size": 4.925729
+    },
+    {
+      "barangay_name": "Horseshoe",
+      "district_id": "IV",
+      "source_barangay_name": "Horseshoe",
+      "source_cells": "A1059:D1059",
+      "population_2020": 2866,
+      "household_population_2020": 2847,
+      "households_2020": 824,
+      "average_household_size": 3.455097
+    },
+    {
+      "barangay_name": "Immaculate Concepcion",
+      "district_id": "IV",
+      "source_barangay_name": "Immaculate Concepcion",
+      "source_cells": "A1060:D1060",
+      "population_2020": 8169,
+      "household_population_2020": 7975,
+      "households_2020": 1978,
+      "average_household_size": 4.03185
+    },
+    {
+      "barangay_name": "Kalusugan",
+      "district_id": "IV",
+      "source_barangay_name": "Kalusugan",
+      "source_cells": "A1062:D1062",
+      "population_2020": 4786,
+      "household_population_2020": 4721,
+      "households_2020": 1133,
+      "average_household_size": 4.166814
+    },
+    {
+      "barangay_name": "Kamuning",
+      "district_id": "IV",
+      "source_barangay_name": "Kamuning",
+      "source_cells": "A1063:D1063",
+      "population_2020": 14258,
+      "household_population_2020": 12139,
+      "households_2020": 3107,
+      "average_household_size": 3.906984
+    },
+    {
+      "barangay_name": "Kaunlaran",
+      "district_id": "IV",
+      "source_barangay_name": "Kaunlaran",
+      "source_cells": "A1065:D1065",
+      "population_2020": 12387,
+      "household_population_2020": 12101,
+      "households_2020": 3639,
+      "average_household_size": 3.325364
+    },
+    {
+      "barangay_name": "Kristong Hari",
+      "district_id": "IV",
+      "source_barangay_name": "Kristong Hari",
+      "source_cells": "A1039:D1039",
+      "population_2020": 6055,
+      "household_population_2020": 5979,
+      "households_2020": 1195,
+      "average_household_size": 5.003347
+    },
+    {
+      "barangay_name": "Krus na Ligas",
+      "district_id": "IV",
+      "source_barangay_name": "Krus Na Ligas",
+      "source_cells": "A1066:D1066",
+      "population_2020": 21287,
+      "household_population_2020": 21287,
+      "households_2020": 5654,
+      "average_household_size": 3.764945
+    },
+    {
+      "barangay_name": "Laging Handa",
+      "district_id": "IV",
+      "source_barangay_name": "Laging Handa",
+      "source_cells": "A1067:D1067",
+      "population_2020": 4812,
+      "household_population_2020": 4804,
+      "households_2020": 1217,
+      "average_household_size": 3.947412
+    },
+    {
+      "barangay_name": "Malaya",
+      "district_id": "IV",
+      "source_barangay_name": "Malaya",
+      "source_cells": "A1072:D1072",
+      "population_2020": 2605,
+      "household_population_2020": 2588,
+      "households_2020": 706,
+      "average_household_size": 3.665722
+    },
+    {
+      "barangay_name": "Mariana",
+      "district_id": "IV",
+      "source_barangay_name": "Mariana",
+      "source_cells": "A1075:D1075",
+      "population_2020": 11967,
+      "household_population_2020": 11471,
+      "households_2020": 2489,
+      "average_household_size": 4.608678
+    },
+    {
+      "barangay_name": "Obrero",
+      "district_id": "IV",
+      "source_barangay_name": "Obrero",
+      "source_cells": "A1086:D1086",
+      "population_2020": 9500,
+      "household_population_2020": 9500,
+      "households_2020": 2525,
+      "average_household_size": 3.762376
+    },
+    {
+      "barangay_name": "Old Capitol Site",
+      "district_id": "IV",
+      "source_barangay_name": "Old Capitol Site",
+      "source_cells": "A1087:D1087",
+      "population_2020": 1319,
+      "household_population_2020": 1319,
+      "households_2020": 426,
+      "average_household_size": 3.096244
+    },
+    {
+      "barangay_name": "Paligsahan",
+      "district_id": "IV",
+      "source_barangay_name": "Paligsahan",
+      "source_cells": "A1090:D1090",
+      "population_2020": 3518,
+      "household_population_2020": 3518,
+      "households_2020": 1034,
+      "average_household_size": 3.402321
+    },
+    {
+      "barangay_name": "Pinagkaisahan",
+      "district_id": "IV",
+      "source_barangay_name": "Pinagkaisahan",
+      "source_cells": "A1098:D1098",
+      "population_2020": 4366,
+      "household_population_2020": 4357,
+      "households_2020": 1144,
+      "average_household_size": 3.808566
+    },
+    {
+      "barangay_name": "Pinyahan",
+      "district_id": "IV",
+      "source_barangay_name": "Pinyahan",
+      "source_cells": "A1097:D1097",
+      "population_2020": 21868,
+      "household_population_2020": 21724,
+      "households_2020": 6187,
+      "average_household_size": 3.511233
+    },
+    {
+      "barangay_name": "Roxas",
+      "district_id": "IV",
+      "source_barangay_name": "Roxas",
+      "source_cells": "A1105:D1105",
+      "population_2020": 10670,
+      "household_population_2020": 10665,
+      "households_2020": 2774,
+      "average_household_size": 3.844629
+    },
+    {
+      "barangay_name": "Sacred Heart",
+      "district_id": "IV",
+      "source_barangay_name": "Sacred Heart",
+      "source_cells": "A1106:D1106",
+      "population_2020": 6089,
+      "household_population_2020": 6089,
+      "households_2020": 1607,
+      "average_household_size": 3.789048
+    },
+    {
+      "barangay_name": "San Isidro",
+      "district_id": "IV",
+      "source_barangay_name": "San Isidro",
+      "source_cells": "A1113:D1113",
+      "population_2020": 6550,
+      "household_population_2020": 6550,
+      "households_2020": 1798,
+      "average_household_size": 3.642937
+    },
+    {
+      "barangay_name": "San Martin de Porres",
+      "district_id": "IV",
+      "source_barangay_name": "San Martin De Porres",
+      "source_cells": "A1116:D1116",
+      "population_2020": 11632,
+      "household_population_2020": 11632,
+      "households_2020": 3412,
+      "average_household_size": 3.409144
+    },
+    {
+      "barangay_name": "San Vicente",
+      "district_id": "IV",
+      "source_barangay_name": "San Vicente",
+      "source_cells": "A1118:D1118",
+      "population_2020": 7160,
+      "household_population_2020": 7160,
+      "households_2020": 2051,
+      "average_household_size": 3.49098
+    },
+    {
+      "barangay_name": "Santo Niño",
+      "district_id": "IV",
+      "source_barangay_name": "Santo Niño",
+      "source_cells": "A1124:D1124",
+      "population_2020": 7070,
+      "household_population_2020": 7070,
+      "households_2020": 1980,
+      "average_household_size": 3.570707
+    },
+    {
+      "barangay_name": "Santol",
+      "district_id": "IV",
+      "source_barangay_name": "Santol",
+      "source_cells": "A1125:D1125",
+      "population_2020": 6410,
+      "household_population_2020": 6410,
+      "households_2020": 1757,
+      "average_household_size": 3.648264
+    },
+    {
+      "barangay_name": "Sikatuna Village",
+      "district_id": "IV",
+      "source_barangay_name": "Sikatuna Village",
+      "source_cells": "A1128:D1128",
+      "population_2020": 6121,
+      "household_population_2020": 6094,
+      "households_2020": 1480,
+      "average_household_size": 4.117568
+    },
+    {
+      "barangay_name": "South Triangle",
+      "district_id": "IV",
+      "source_barangay_name": "South Triangle",
+      "source_cells": "A1131:D1131",
+      "population_2020": 14494,
+      "household_population_2020": 14451,
+      "households_2020": 4052,
+      "average_household_size": 3.566387
+    },
+    {
+      "barangay_name": "Tatalon",
+      "district_id": "IV",
+      "source_barangay_name": "Tatalon",
+      "source_cells": "A1136:D1136",
+      "population_2020": 55404,
+      "household_population_2020": 55380,
+      "households_2020": 14707,
+      "average_household_size": 3.765554
+    },
+    {
+      "barangay_name": "Teachers Village East",
+      "district_id": "IV",
+      "source_barangay_name": "Teachers Village East",
+      "source_cells": "A1137:D1137",
+      "population_2020": 2401,
+      "household_population_2020": 2401,
+      "households_2020": 612,
+      "average_household_size": 3.923203
+    },
+    {
+      "barangay_name": "Teachers Village West",
+      "district_id": "IV",
+      "source_barangay_name": "Teachers Village West",
+      "source_cells": "A1138:D1138",
+      "population_2020": 2986,
+      "household_population_2020": 2984,
+      "households_2020": 808,
+      "average_household_size": 3.693069
+    },
+    {
+      "barangay_name": "U. P. Campus",
+      "district_id": "IV",
+      "source_barangay_name": "U.P. Campus",
+      "source_cells": "A1139:D1139",
+      "population_2020": 47127,
+      "household_population_2020": 47122,
+      "households_2020": 12748,
+      "average_household_size": 3.696423
+    },
+    {
+      "barangay_name": "U. P. Village",
+      "district_id": "IV",
+      "source_barangay_name": "U.P. Village",
+      "source_cells": "A1140:D1140",
+      "population_2020": 3167,
+      "household_population_2020": 3167,
+      "households_2020": 961,
+      "average_household_size": 3.295525
+    },
+    {
+      "barangay_name": "Valencia",
+      "district_id": "IV",
+      "source_barangay_name": "Valencia",
+      "source_cells": "A1143:D1143",
+      "population_2020": 10900,
+      "household_population_2020": 10877,
+      "households_2020": 2313,
+      "average_household_size": 4.702551
+    },
+    {
+      "barangay_name": "Bagbag",
+      "district_id": "V",
+      "source_barangay_name": "Bagbag",
+      "source_cells": "A1021:D1021",
+      "population_2020": 64653,
+      "household_population_2020": 64545,
+      "households_2020": 15088,
+      "average_household_size": 4.277903
+    },
+    {
+      "barangay_name": "Capri",
+      "district_id": "V",
+      "source_barangay_name": "Capri",
+      "source_cells": "A1151:D1151",
+      "population_2020": 12903,
+      "household_population_2020": 12903,
+      "households_2020": 2902,
+      "average_household_size": 4.446244
+    },
+    {
+      "barangay_name": "Fairview",
+      "district_id": "V",
+      "source_barangay_name": "Fairview",
+      "source_cells": "A1056:D1056",
+      "population_2020": 61813,
+      "household_population_2020": 61498,
+      "households_2020": 14116,
+      "average_household_size": 4.356617
+    },
+    {
+      "barangay_name": "Greater Lagro",
+      "district_id": "V",
+      "source_barangay_name": "Greater Lagro",
+      "source_cells": "A1156:D1156",
+      "population_2020": 23569,
+      "household_population_2020": 23456,
+      "households_2020": 5676,
+      "average_household_size": 4.132488
+    },
+    {
+      "barangay_name": "Gulod",
+      "district_id": "V",
+      "source_barangay_name": "Gulod",
+      "source_cells": "A1058:D1058",
+      "population_2020": 62542,
+      "household_population_2020": 62505,
+      "households_2020": 14801,
+      "average_household_size": 4.223025
+    },
+    {
+      "barangay_name": "Kaligayahan",
+      "district_id": "V",
+      "source_barangay_name": "Kaligayahan",
+      "source_cells": "A1061:D1061",
+      "population_2020": 60462,
+      "household_population_2020": 60421,
+      "households_2020": 14316,
+      "average_household_size": 4.220522
+    },
+    {
+      "barangay_name": "Nagkaisang Nayon",
+      "district_id": "V",
+      "source_barangay_name": "Nagkaisang Nayon",
+      "source_cells": "A1083:D1083",
+      "population_2020": 53781,
+      "household_population_2020": 53781,
+      "households_2020": 13845,
+      "average_household_size": 3.884507
+    },
+    {
+      "barangay_name": "North Fairview",
+      "district_id": "V",
+      "source_barangay_name": "North Fairview",
+      "source_cells": "A1157:D1157",
+      "population_2020": 44408,
+      "household_population_2020": 44352,
+      "households_2020": 10550,
+      "average_household_size": 4.203981
+    },
+    {
+      "barangay_name": "Novaliches Proper",
+      "district_id": "V",
+      "source_barangay_name": "Novaliches Proper",
+      "source_cells": "A1085:D1085",
+      "population_2020": 15468,
+      "household_population_2020": 15435,
+      "households_2020": 3702,
+      "average_household_size": 4.169368
+    },
+    {
+      "barangay_name": "Pasong Putik Proper",
+      "district_id": "V",
+      "source_barangay_name": "Pasong Putik Proper (Pasong Putik)",
+      "source_cells": "A1094:D1094",
+      "population_2020": 39896,
+      "household_population_2020": 39830,
+      "households_2020": 9313,
+      "average_household_size": 4.276817
+    },
+    {
+      "barangay_name": "San Agustin",
+      "district_id": "V",
+      "source_barangay_name": "San Agustin",
+      "source_cells": "A1110:D1110",
+      "population_2020": 25355,
+      "household_population_2020": 25336,
+      "households_2020": 6034,
+      "average_household_size": 4.198873
+    },
+    {
+      "barangay_name": "San Bartolome",
+      "district_id": "V",
+      "source_barangay_name": "San Bartolome",
+      "source_cells": "A1112:D1112",
+      "population_2020": 51148,
+      "household_population_2020": 51055,
+      "households_2020": 11976,
+      "average_household_size": 4.26311
+    },
+    {
+      "barangay_name": "Santa Lucia",
+      "district_id": "V",
+      "source_barangay_name": "Santa Lucia",
+      "source_cells": "A1120:D1120",
+      "population_2020": 28215,
+      "household_population_2020": 28215,
+      "households_2020": 6712,
+      "average_household_size": 4.203665
+    },
+    {
+      "barangay_name": "Santa Monica",
+      "district_id": "V",
+      "source_barangay_name": "Santa Monica",
+      "source_cells": "A1121:D1121",
+      "population_2020": 51834,
+      "household_population_2020": 51785,
+      "households_2020": 12298,
+      "average_household_size": 4.210847
+    },
+    {
+      "barangay_name": "Apolonio Samson",
+      "district_id": "VI",
+      "source_barangay_name": "Apolonio Samson",
+      "source_cells": "A1018:D1018",
+      "population_2020": 33629,
+      "household_population_2020": 33629,
+      "households_2020": 9186,
+      "average_household_size": 3.660897
+    },
+    {
+      "barangay_name": "Baesa",
+      "district_id": "VI",
+      "source_barangay_name": "Baesa",
+      "source_cells": "A1020:D1020",
+      "population_2020": 55328,
+      "household_population_2020": 55319,
+      "households_2020": 14844,
+      "average_household_size": 3.726691
+    },
+    {
+      "barangay_name": "Balon-Bato",
+      "district_id": "VI",
+      "source_barangay_name": "Balong Bato",
+      "source_cells": "A1150:D1150",
+      "population_2020": 6991,
+      "household_population_2020": 6991,
+      "households_2020": 1765,
+      "average_household_size": 3.960907
+    },
+    {
+      "barangay_name": "Culiat",
+      "district_id": "VI",
+      "source_barangay_name": "Culiat",
+      "source_cells": "A1040:D1040",
+      "population_2020": 67804,
+      "household_population_2020": 67747,
+      "households_2020": 17110,
+      "average_household_size": 3.959497
+    },
+    {
+      "barangay_name": "New Era",
+      "district_id": "VI",
+      "source_barangay_name": "New Era (Constitution Hills)",
+      "source_cells": "A1038:D1038",
+      "population_2020": 14105,
+      "household_population_2020": 13090,
+      "households_2020": 3179,
+      "average_household_size": 4.117647
+    },
+    {
+      "barangay_name": "Pasong Tamo",
+      "district_id": "VI",
+      "source_barangay_name": "Pasong Tamo",
+      "source_cells": "A1095:D1095",
+      "population_2020": 110738,
+      "household_population_2020": 110572,
+      "households_2020": 27838,
+      "average_household_size": 3.971981
+    },
+    {
+      "barangay_name": "Sangandaan",
+      "district_id": "VI",
+      "source_barangay_name": "Sangandaan",
+      "source_cells": "A1152:D1152",
+      "population_2020": 21061,
+      "household_population_2020": 21061,
+      "households_2020": 5445,
+      "average_household_size": 3.867952
+    },
+    {
+      "barangay_name": "Sauyo",
+      "district_id": "VI",
+      "source_barangay_name": "Sauyo",
+      "source_cells": "A1126:D1126",
+      "population_2020": 76289,
+      "household_population_2020": 76266,
+      "households_2020": 19179,
+      "average_household_size": 3.976537
+    },
+    {
+      "barangay_name": "Talipapa",
+      "district_id": "VI",
+      "source_barangay_name": "Talipapa",
+      "source_cells": "A1134:D1134",
+      "population_2020": 38949,
+      "household_population_2020": 38921,
+      "households_2020": 9955,
+      "average_household_size": 3.909694
+    },
+    {
+      "barangay_name": "Tandang Sora",
+      "district_id": "VI",
+      "source_barangay_name": "Tandang Sora",
+      "source_cells": "A1135:D1135",
+      "population_2020": 83114,
+      "household_population_2020": 83097,
+      "households_2020": 22078,
+      "average_household_size": 3.763792
+    },
+    {
+      "barangay_name": "Unang Sigaw",
+      "district_id": "VI",
+      "source_barangay_name": "Unang Sigaw",
+      "source_cells": "A1142:D1142",
+      "population_2020": 6508,
+      "household_population_2020": 6508,
+      "households_2020": 1551,
+      "average_household_size": 4.196003
+    }
+  ]
+}

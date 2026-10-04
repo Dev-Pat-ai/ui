@@ -1,0 +1,6 @@
+barangay_name,district_id,effective_start_year,effective_end_year,mapping_source
+# barangay_name: Full name of the barangay
+# district_id: Quezon City District (I, II, III, IV, V, VI)
+# effective_start_year: Start year for this mapping (e.g. 2018)
+# effective_end_year: End year for this mapping (e.g. 2024)
+# mapping_source: Source of the mapping definition (e.g. QC Planning)

@@ -1,0 +1,13 @@
+- [x] Import Inter font from Google Fonts in `index.html`
+- [x] Apply Inter globally in `style.css`
+- [x] Refine weights and letter-spacing for sidebar and KPIs
+- [x] Phase 6E — Forecast & Inference UI Upgrade
+- [x] Phase 6F — Global UI Polishing (History, Districts, About)
+- [x] Phase 6G — District Overview Typography Balance
+- [/] Phase 6I — Final Product "Scrub"
+    - [ ] Remove "Prototype" from titles and headers in `index.html`
+    - [ ] Rename "Sample Cases" to "Current Cases" in `index.html` and `app.js`
+    - [ ] Scrub "DEMO" tags and disclaimers from all pages
+    - [ ] Update "Sample updated" to "Last updated"
+    - [ ] Rephrase "About" page for production tone
+- [ ] Final visual audit and mobile responsiveness check

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create account · DengueSense QC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    [hidden] { display: none !important; }
+    body {
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+      background:
+        radial-gradient(1100px 620px at 82% -6%, rgba(191, 219, 254, 0.55), transparent 60%),
+        radial-gradient(900px 500px at -6% 90%, rgba(219, 234, 254, 0.6), transparent 55%),
+        linear-gradient(180deg, #eef4fb 0%, #f7fafd 55%, #ffffff 100%);
+      display: flex; flex-direction: column; align-items: center;
+      padding: 28px 20px 40px;
+    }
+    .topbar { width: 100%; max-width: 1100px; display: flex; align-items: center; gap: 12px; }
+    .logo-icon {
+      width: 42px; height: 42px; border-radius: 11px;
+      background: linear-gradient(150deg, #3b82f6, #1d4ed8);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.32);
+    }
+    .logo-title { font-weight: 800; font-size: 18px; color: #0f172a; line-height: 1.2; }
+    .logo-sub { font-size: 13px; color: #64748b; }
+
+    .panel {
+      width: 100%; max-width: 440px; margin-top: 4vh;
+      background: #fff; border-radius: 20px; padding: 44px 40px;
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.1);
+    }
+    .panel-icon {
+      width: 44px; height: 44px; border-radius: 12px; background: #eaf1fe; color: #2563eb;
+      display: flex; align-items: center; justify-content: center; margin-bottom: 20px;
+    }
+    .eyebrow { font-size: 11.5px; font-weight: 700; letter-spacing: 0.1em; color: #94a3b8; margin-bottom: 6px; }
+    h1 { font-size: 28px; font-weight: 800; color: #0f172a; margin-bottom: 8px; }
+    .sub { font-size: 14px; color: #64748b; line-height: 1.55; margin-bottom: 28px; }
+
+    .field { margin-bottom: 18px; }
+    .field label { display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 7px; }
+    .input-wrap { position: relative; display: flex; align-items: center; }
+    .input-icon { position: absolute; left: 14px; color: #94a3b8; pointer-events: none; }
+    .input-wrap input {
+      width: 100%; padding: 12px 14px 12px 40px;
+      border: 1px solid #e2e8f0; border-radius: 10px;
+      font-size: 14px; font-family: inherit; color: #0f172a; background: #f8fafc;
+    }
+    .input-wrap input:focus { outline: none; border-color: #93c5fd; background: #fff; }
+    .input-wrap input.invalid { border-color: #fca5a5; background: #fef2f2; }
+    .field-error { font-size: 12px; font-weight: 600; color: #dc2626; margin: 6px 2px 0; }
+
+    .banner { font-size: 13px; font-weight: 600; line-height: 1.5; padding: 11px 14px; border-radius: 10px; margin-bottom: 18px; }
+    .banner.error { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
+    .banner.info { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+    .banner.success { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+
+    .submit {
+      width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: #fff; border: none;
+      border-radius: 10px; font-size: 15px; font-weight: 700; font-family: inherit;
+      padding: 13px; cursor: pointer; box-shadow: 0 10px 22px rgba(37, 99, 235, 0.3);
+    }
+    .submit:disabled { opacity: 0.75; cursor: default; }
+    .spinner {
+      width: 15px; height: 15px; border: 2px solid rgba(255, 255, 255, 0.4); border-top-color: #fff;
+      border-radius: 50%; display: inline-block; animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .switch { font-size: 13px; color: #64748b; text-align: center; margin-top: 18px; }
+    .switch a { color: #2563eb; font-weight: 700; text-decoration: none; }
+    .switch a:hover { text-decoration: underline; }
+    .divider { border-top: 1px solid #e2e8f0; margin: 26px 0 14px; text-align: center; padding-top: 14px;
+      font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; color: #cbd5e1; }
+    .footer-text { font-size: 12px; color: #94a3b8; text-align: center; }
+
+    @media (max-width: 480px) { .panel { padding: 32px 22px; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+    </div>
+    <div>
+      <div class="logo-title">DengueSense QC</div>
+      <div class="logo-sub">Quezon City</div>
+    </div>
+  </div>
+
+  <main class="panel">
+    <div class="panel-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle>
+        <line x1="19" y1="8" x2="19" y2="14"></line><line x1="22" y1="11" x2="16" y2="11"></line>
+      </svg>
+    </div>
+    <div class="eyebrow">DENGUESENSE QC</div>
+    <h1>Create account</h1>
+    <p class="sub">Sign up to start using the dengue prediction simulation.</p>
+
+    <form id="signup-form" novalidate>
+      <div class="banner" id="banner" hidden></div>
+
+      <div class="field">
+        <label for="name">Full Name</label>
+        <div class="input-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="input-icon"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <input type="text" id="name" placeholder="Enter your full name" autocomplete="name" maxlength="60">
+        </div>
+        <p class="field-error" id="name-error" hidden></p>
+      </div>
+
+      <div class="field">
+        <label for="email">Email Address</label>
+        <div class="input-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="input-icon"><path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+          <input type="email" id="email" placeholder="Enter your email address" autocomplete="email">
+        </div>
+        <p class="field-error" id="email-error" hidden></p>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <div class="input-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="input-icon"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <input type="password" id="password" placeholder="At least 6 characters" autocomplete="new-password">
+        </div>
+        <p class="field-error" id="password-error" hidden></p>
+      </div>
+
+      <div class="field">
+        <label for="confirm">Confirm Password</label>
+        <div class="input-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="input-icon"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <input type="password" id="confirm" placeholder="Re-enter your password" autocomplete="new-password">
+        </div>
+        <p class="field-error" id="confirm-error" hidden></p>
+      </div>
+
+      <button type="submit" class="submit" id="submit-btn">
+        <span class="spinner" id="spinner" hidden></span>
+        <span id="submit-label">Create Account</span>
+      </button>
+    </form>
+
+    <p class="switch">Already have an account? <a href="index.html">Sign in</a></p>
+    <div class="divider">SECURE ACCESS</div>
+    <p class="footer-text">Dengue monitoring and risk classification for Quezon City.</p>
+  </main>
+
+  <script>
+    var API = (location.protocol === 'file:' || !location.origin || location.origin === 'null')
+      ? 'http://localhost:5000' : location.origin;
+    var HOME_URL = 'index.html'; // where to go after a successful sign-up
+
+    function $(id) { return document.getElementById(id); }
+    function isValidEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+    function setFieldError(field, message) {
+      var input = $(field), err = $(field + '-error');
+      input.classList.toggle('invalid', !!message);
+      err.hidden = !message;
+      err.textContent = message || '';
+    }
+    function setBanner(message, type) {
+      var b = $('banner');
+      b.hidden = !message;
+      b.textContent = message || '';
+      b.className = 'banner ' + (type || 'error');
+    }
+    function clearErrors() {
+      ['name', 'email', 'password', 'confirm'].forEach(function (f) { setFieldError(f, ''); });
+      setBanner('');
+    }
+    function setLoading(loading) {
+      $('submit-btn').disabled = loading;
+      $('spinner').hidden = !loading;
+      $('submit-label').textContent = loading ? 'Creating account…' : 'Create Account';
+    }
+
+    // POST { name, email, password } -> 200/201 { user }, 409 = email already registered
+    function register(name, email, password) {
+      var controller = new AbortController();
+      var t = setTimeout(function () { controller.abort(); }, 2500);
+      return fetch(API + '/api/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: name, email: email, password: password }),
+        signal: controller.signal
+      }).finally(function () { clearTimeout(t); });
+    }
+
+    $('signup-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      clearErrors();
+
+      var name = $('name').value.trim();
+      var email = $('email').value.trim();
+      var password = $('password').value;
+      var confirm = $('confirm').value;
+      var bad = false;
+      function fail(f, m) { setFieldError(f, m); bad = true; }
+
+      if (!name) fail('name', 'Full name is required.');
+      if (!email) fail('email', 'Email address is required.');
+      else if (!isValidEmail(email)) fail('email', 'Enter a valid email address.');
+      if (!password) fail('password', 'Password is required.');
+      else if (password.length < 6) fail('password', 'Password must be at least 6 characters.');
+      if (!confirm) fail('confirm', 'Please confirm your password.');
+      else if (confirm !== password) fail('confirm', 'Passwords do not match.');
+      if (bad) return;
+
+      function saveProfile() {
+        try {
+          localStorage.setItem('denguesenseqc_profile_v1', JSON.stringify({
+            name: name, title: 'Public User', email: email, organization: '',
+            location: 'Quezon City, Philippines', username: email.split('@')[0],
+            password: '', avatar: null, access: 'Public User',
+            memberSince: new Date().toISOString()
+          }));
+        } catch (err) {}
+      }
+      function goHome() { setTimeout(function () { location.href = HOME_URL; }, 900); }
+
+      function demoFallback() {
+        try { localStorage.setItem('denguesense_current_user', JSON.stringify({ email: email, role: 'user' })); } catch (err) {}
+        saveProfile();
+        setBanner('Sign-up service isn\u2019t connected yet — continuing in demo mode.', 'info');
+        goHome();
+      }
+
+      setLoading(true);
+      register(name, email, password)
+        .then(function (res) {
+          if (res.ok) {
+            return res.json().then(function (data) {
+              if (data && data.user) localStorage.setItem('denguesense_current_user', JSON.stringify(data.user));
+              saveProfile();
+              setBanner('Account created. Taking you to the dashboard…', 'success');
+              goHome();
+            }).catch(function () { saveProfile(); goHome(); });
+          }
+          if (res.status === 409) setFieldError('email', 'An account with this email already exists.');
+          else if (res.status === 400 || res.status === 422) setBanner('Please check your details and try again.', 'error');
+          else demoFallback();
+        })
+        .catch(demoFallback)
+        .finally(function () { setLoading(false); });
+    });
+  </script>
+</body>
+</html>

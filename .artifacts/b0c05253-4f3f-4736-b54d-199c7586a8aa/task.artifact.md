@@ -1,0 +1,11 @@
+- [x] Research and Planning (District Overview)
+- [x] Update `frontend/index.html` header and layout
+- [x] Update `frontend/js/app.js` with new `dist-card` template and icons
+- [x] Add new styles to `frontend/css/style.css`
+- [x] Verify the UI redesign in browser
+- [x] Final polish and cleanup
+- [x] Research and Planning (District Detail)
+- [x] Update `frontend/index.html` with new `district-detail-card` structure
+- [x] Update `frontend/js/app.js` to populate new detail fields
+- [x] Add new detail styles to `frontend/css/style.css`
+- [x] Verify the detail view redesign

@@ -1,0 +1,11 @@
+- [x] Fix encoding in `QC_YearlyData-BarangayCSV.csv`
+- [x] Update BVI definition in `index.html`
+- [x] Consolidate District V indicators in `index.html` and `app.js`
+- [x] Add descriptive labels for demo periods in `index.html` and `app.js`
+- [x] Align sample data in `districts.json`
+- [x] Verify changes in UI
+- [x] Simplify "About" section in `index.html`
+- [x] Update walkthrough with "About" section changes
+- [x] Update `sample-data.js` with 2025 records
+- [x] Update labels in `index.html` to (2023-2025)
+- [x] Verify updated data in UI

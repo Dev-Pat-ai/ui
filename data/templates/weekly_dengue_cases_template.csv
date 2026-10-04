@@ -1,0 +1,12 @@
+epi_year,epi_week,geographic_level,barangay_name,district_id,dengue_cases,data_source,week_calendar
+# epi_year: 4-digit year (e.g. 2024)
+# epi_week: Epidemiological week (1-53)
+# geographic_level: "barangay" for the current BN intake
+# barangay_name: Required canonical barangay name for the current BN intake
+# district_id: Quezon City District (I, II, III, IV, V, VI)
+# dengue_cases: Non-negative integer count
+# data_source: Source agency (e.g. QCESD)
+# week_calendar: Source-declared ISO-8601 or MMWR; confirm with provider, do not guess
+# BN requires all 142 canonical barangays for every continuous observed reporting week
+# District-only observations support the district research scope but need a separate district adapter and evaluation; never expand them into barangay observations
+# Optional weather columns: rainfall_mm,rainfall_source for the same declared reporting weeks

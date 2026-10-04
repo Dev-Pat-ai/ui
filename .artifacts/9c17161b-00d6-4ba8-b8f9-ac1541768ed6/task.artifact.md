@@ -1,0 +1,7 @@
+- [ ] Update `style.css` with simulation-specific styles
+- [ ] Add simulation controls to `index.html` (Forecast Sidebar)
+- [ ] Update `app.js` logic
+    - [ ] Add environmental tags to Dashboard district cards
+    - [ ] Update `collectEvidence` to include simulation factors
+- [ ] Update `bn_model.py` to handle simulated logic adjustments
+- [ ] Final verification of the interactive simulation
